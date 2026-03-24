@@ -1,0 +1,91 @@
+SID,Agp,n
+Drolet et al. 2010,"[40,45)",2
+Drolet et al. 2010,"[45,50)",5
+Drolet et al. 2010,"[50,55)",50
+Drolet et al. 2010,"[55,60)",46
+Drolet et al. 2010,"[60,65)",30
+Drolet et al. 2010,"[65,70)",42
+Drolet et al. 2010,"[70,75)",31
+Drolet et al. 2010,"[75,80)",27
+Drolet et al. 2010,"[80,85)",19
+Drolet et al. 2010,"[85,90)",7
+Drolet et al. 2010,"[90,100)",4
+Rampakakis et al. 2017 Argentina,"[45,50)",1
+Rampakakis et al. 2017 Argentina,"[50,55)",5
+Rampakakis et al. 2017 Argentina,"[55,60)",7
+Rampakakis et al. 2017 Argentina,"[60,65)",7
+Rampakakis et al. 2017 Argentina,"[65,70)",10
+Rampakakis et al. 2017 Argentina,"[70,75)",7
+Rampakakis et al. 2017 Argentina,"[75,80)",7
+Rampakakis et al. 2017 Argentina,"[80,85)",3
+Rampakakis et al. 2017 Argentina,"[85,90)",4
+Rampakakis et al. 2017 Argentina,"[90,100)",2
+Rampakakis et al. 2017 Costa Rica,"[50,55)",1
+Rampakakis et al. 2017 Costa Rica,"[55,60)",1
+Rampakakis et al. 2017 Costa Rica,"[60,65)",1
+Rampakakis et al. 2017 Costa Rica,"[65,70)",1
+Rampakakis et al. 2017 Costa Rica,"[70,75)",2
+Rampakakis et al. 2017 Costa Rica,"[85,90)",1
+Rampakakis et al. 2017 Korea,"[50,55)",16
+Rampakakis et al. 2017 Korea,"[55,60)",27
+Rampakakis et al. 2017 Korea,"[60,65)",15
+Rampakakis et al. 2017 Korea,"[65,70)",18
+Rampakakis et al. 2017 Korea,"[70,75)",7
+Rampakakis et al. 2017 Korea,"[75,80)",4
+Rampakakis et al. 2017 Korea,"[80,85)",1
+Rampakakis et al. 2017 Korea,"[85,90)",1
+Rampakakis et al. 2017 Mexico,"[50,55)",5
+Rampakakis et al. 2017 Mexico,"[55,60)",7
+Rampakakis et al. 2017 Mexico,"[60,65)",9
+Rampakakis et al. 2017 Mexico,"[65,70)",5
+Rampakakis et al. 2017 Mexico,"[70,75)",4
+Rampakakis et al. 2017 Mexico,"[75,80)",4
+Rampakakis et al. 2017 Mexico,"[80,85)",2
+Rampakakis et al. 2017 Mexico,"[85,90)",1
+Rampakakis et al. 2017 Mexico,"[90,100)",1
+Rampakakis et al. 2017 Mexico,NA,1
+Rampakakis et al. 2017 Taiwan,"[45,50)",1
+Rampakakis et al. 2017 Taiwan,"[50,55)",25
+Rampakakis et al. 2017 Taiwan,"[55,60)",25
+Rampakakis et al. 2017 Taiwan,"[60,65)",23
+Rampakakis et al. 2017 Taiwan,"[65,70)",19
+Rampakakis et al. 2017 Taiwan,"[70,75)",19
+Rampakakis et al. 2017 Taiwan,"[75,80)",9
+Rampakakis et al. 2017 Taiwan,"[80,85)",7
+Rampakakis et al. 2017 Taiwan,"[85,90)",2
+Rampakakis et al. 2017 Thailand,"[0,30)",3
+Rampakakis et al. 2017 Thailand,"[30,35)",7
+Rampakakis et al. 2017 Thailand,"[35,40)",8
+Rampakakis et al. 2017 Thailand,"[40,45)",5
+Rampakakis et al. 2017 Thailand,"[45,50)",6
+Rampakakis et al. 2017 Thailand,"[50,55)",29
+Rampakakis et al. 2017 Thailand,"[55,60)",28
+Rampakakis et al. 2017 Thailand,"[60,65)",23
+Rampakakis et al. 2017 Thailand,"[65,70)",15
+Rampakakis et al. 2017 Thailand,"[70,75)",14
+Rampakakis et al. 2017 Thailand,"[75,80)",16
+Rampakakis et al. 2017 Thailand,"[80,85)",4
+Rampakakis et al. 2017 Thailand,"[85,90)",3
+Rampakakis et al. 2017 Thailand,"[90,100)",1
+Scott et al. 2006,"[0,30)",15
+Scott et al. 2006,"[30,35)",2
+Scott et al. 2006,"[35,40)",3
+Scott et al. 2006,"[40,45)",6
+Scott et al. 2006,"[45,50)",2
+Scott et al. 2006,"[50,55)",3
+Scott et al. 2006,"[55,60)",5
+Scott et al. 2006,"[60,65)",2
+Scott et al. 2006,"[65,70)",2
+Scott et al. 2006,"[70,75)",7
+Scott et al. 2006,"[75,80)",3
+Scott et al. 2006,"[80,85)",4
+Scott et al. 2006,"[85,90)",1
+van Wijck et al. 2016,"[50,55)",82
+van Wijck et al. 2016,"[55,60)",105
+van Wijck et al. 2016,"[60,65)",106
+van Wijck et al. 2016,"[65,70)",97
+van Wijck et al. 2016,"[70,75)",68
+van Wijck et al. 2016,"[75,80)",45
+van Wijck et al. 2016,"[80,85)",34
+van Wijck et al. 2016,"[85,90)",9
+van Wijck et al. 2016,"[90,100)",1

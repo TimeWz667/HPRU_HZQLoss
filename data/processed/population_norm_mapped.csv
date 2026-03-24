@@ -1,0 +1,766 @@
+study,proxy,Source,Age,norm,norm_leoss
+Drolet et al. 2010,Canada,Poder et al.,18,0.843,0.8593713060632404
+Drolet et al. 2010,Canada,Poder et al.,19,0.843,0.8575379654612578
+Drolet et al. 2010,Canada,Poder et al.,20,0.843,0.8557370923231938
+Drolet et al. 2010,Canada,Poder et al.,21,0.843,0.8539639014408232
+Drolet et al. 2010,Canada,Poder et al.,22,0.843,0.8522136076059207
+Drolet et al. 2010,Canada,Poder et al.,23,0.843,0.8504814256102615
+Drolet et al. 2010,Canada,Poder et al.,24,0.843,0.8487625702456204
+Drolet et al. 2010,Canada,Poder et al.,25,0.865,0.8470522563037725
+Drolet et al. 2010,Canada,Poder et al.,26,0.865,0.8453456985764927
+Drolet et al. 2010,Canada,Poder et al.,27,0.865,0.8436381118555558
+Drolet et al. 2010,Canada,Poder et al.,28,0.865,0.8419247109327369
+Drolet et al. 2010,Canada,Poder et al.,29,0.865,0.8401943695920474
+Drolet et al. 2010,Canada,Poder et al.,30,0.837,0.8384477634310595
+Drolet et al. 2010,Canada,Poder et al.,31,0.837,0.8366978099618888
+Drolet et al. 2010,Canada,Poder et al.,32,0.837,0.8349574266966517
+Drolet et al. 2010,Canada,Poder et al.,33,0.837,0.8332395311474634
+Drolet et al. 2010,Canada,Poder et al.,34,0.837,0.8315570408264404
+Drolet et al. 2010,Canada,Poder et al.,35,0.837,0.8299228732456982
+Drolet et al. 2010,Canada,Poder et al.,36,0.837,0.8283499459173532
+Drolet et al. 2010,Canada,Poder et al.,37,0.837,0.8268511763535206
+Drolet et al. 2010,Canada,Poder et al.,38,0.837,0.8254394820663169
+Drolet et al. 2010,Canada,Poder et al.,39,0.837,0.8239737644957082
+Drolet et al. 2010,Canada,Poder et al.,40,0.824,0.8223389875355286
+Drolet et al. 2010,Canada,Poder et al.,41,0.824,0.8205871623786953
+Drolet et al. 2010,Canada,Poder et al.,42,0.824,0.8187703002181252
+Drolet et al. 2010,Canada,Poder et al.,43,0.824,0.8169404122467353
+Drolet et al. 2010,Canada,Poder et al.,44,0.824,0.8151495096574433
+Drolet et al. 2010,Canada,Poder et al.,45,0.804,0.8134496036431659
+Drolet et al. 2010,Canada,Poder et al.,46,0.804,0.8118927053968202
+Drolet et al. 2010,Canada,Poder et al.,47,0.804,0.8105308261113235
+Drolet et al. 2010,Canada,Poder et al.,48,0.804,0.8094159769795927
+Drolet et al. 2010,Canada,Poder et al.,49,0.804,0.808600169194545
+Drolet et al. 2010,Canada,Poder et al.,50,0.798,0.808199203623278
+Drolet et al. 2010,Canada,Poder et al.,51,0.798,0.8082339852939933
+Drolet et al. 2010,Canada,Poder et al.,52,0.798,0.8086141816412635
+Drolet et al. 2010,Canada,Poder et al.,53,0.798,0.8092494600996627
+Drolet et al. 2010,Canada,Poder et al.,54,0.798,0.8100494881037631
+Drolet et al. 2010,Canada,Poder et al.,55,0.805,0.8109239330881388
+Drolet et al. 2010,Canada,Poder et al.,56,0.805,0.8117824624873622
+Drolet et al. 2010,Canada,Poder et al.,57,0.805,0.8125347437360071
+Drolet et al. 2010,Canada,Poder et al.,58,0.805,0.8130904442686463
+Drolet et al. 2010,Canada,Poder et al.,59,0.805,0.8133592315198531
+Drolet et al. 2010,Canada,Poder et al.,60,0.822,0.813601305582469
+Drolet et al. 2010,Canada,Poder et al.,61,0.822,0.8140959998385117
+Drolet et al. 2010,Canada,Poder et al.,62,0.822,0.8147816816563193
+Drolet et al. 2010,Canada,Poder et al.,63,0.822,0.8155967184042295
+Drolet et al. 2010,Canada,Poder et al.,64,0.822,0.8164794774505799
+Drolet et al. 2010,Canada,Poder et al.,65,0.832,0.817368326163709
+Drolet et al. 2010,Canada,Poder et al.,66,0.832,0.8182016319119538
+Drolet et al. 2010,Canada,Poder et al.,67,0.832,0.8189177620636525
+Drolet et al. 2010,Canada,Poder et al.,68,0.832,0.8194550839871432
+Drolet et al. 2010,Canada,Poder et al.,69,0.832,0.8197519650507631
+Drolet et al. 2010,Canada,Poder et al.,70,0.827,0.8197467726228505
+Drolet et al. 2010,Canada,Poder et al.,71,0.827,0.8194691194809107
+Drolet et al. 2010,Canada,Poder et al.,72,0.827,0.8190129038623288
+Drolet et al. 2010,Canada,Poder et al.,73,0.827,0.8184129213252611
+Drolet et al. 2010,Canada,Poder et al.,74,0.827,0.8177039674278646
+Drolet et al. 2010,Canada,Poder et al.,75,0.803,0.8169208377282956
+Drolet et al. 2010,Canada,Poder et al.,76,0.803,0.8160983277847111
+Drolet et al. 2010,Canada,Poder et al.,77,0.803,0.8152712331552677
+Drolet et al. 2010,Canada,Poder et al.,78,0.803,0.814474349398122
+Drolet et al. 2010,Canada,Poder et al.,79,0.803,0.8137424720714306
+Drolet et al. 2010,Canada,Poder et al.,80,0.803,0.8131103967333504
+Drolet et al. 2010,Canada,Poder et al.,81,0.803,0.8125053286786996
+Drolet et al. 2010,Canada,Poder et al.,82,0.803,0.8118372393100027
+Drolet et al. 2010,Canada,Poder et al.,83,0.803,0.8111150733469757
+Drolet et al. 2010,Canada,Poder et al.,84,0.803,0.8103477755093348
+Drolet et al. 2010,Canada,Poder et al.,85,0.803,0.8095442905167953
+Drolet et al. 2010,Canada,Poder et al.,86,0.803,0.8087135630890739
+Drolet et al. 2010,Canada,Poder et al.,87,0.803,0.8078645379458859
+Drolet et al. 2010,Canada,Poder et al.,88,0.803,0.8070061598069476
+Drolet et al. 2010,Canada,Poder et al.,89,0.803,0.8061473733919748
+Drolet et al. 2010,Canada,Poder et al.,90,0.803,0.8052971234206836
+Drolet et al. 2010,Canada,Poder et al.,91,0.803,0.804456156411121
+Drolet et al. 2010,Canada,Poder et al.,92,0.803,0.8036170337221625
+Drolet et al. 2010,Canada,Poder et al.,93,0.803,0.8027764223347665
+Drolet et al. 2010,Canada,Poder et al.,94,0.803,0.8019309892298918
+Drolet et al. 2010,Canada,Poder et al.,95,0.803,0.8010774013884966
+Drolet et al. 2010,Canada,Poder et al.,96,0.803,0.8002123257915393
+Drolet et al. 2010,Canada,Poder et al.,97,0.803,0.7993324294199784
+Drolet et al. 2010,Canada,Poder et al.,98,0.803,0.7984343792547725
+Drolet et al. 2010,Canada,Poder et al.,99,0.803,0.7975148422768799
+Drolet et al. 2010,Canada,Poder et al.,100,0.803,0.7965704854672594
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,18,0.907,0.9096516110413574
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,19,0.907,0.9079451897089472
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,20,0.907,0.9062230114037858
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,21,0.907,0.9044857313377159
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,22,0.907,0.9027340047225808
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,23,0.907,0.9009684867702233
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,24,0.907,0.8991898326924868
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,25,0.889,0.8973986977012142
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,26,0.889,0.8955957370082483
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,27,0.889,0.8937816058254328
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,28,0.889,0.8919569593646102
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,29,0.889,0.8901243637659441
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,30,0.889,0.8882845232310627
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,31,0.889,0.8864353000640065
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,32,0.889,0.8845745565688168
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,33,0.889,0.8827001550495335
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,34,0.889,0.8808099578101979
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,35,0.869,0.8789018271548502
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,36,0.869,0.8769736253875314
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,37,0.869,0.8750232148122822
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,38,0.869,0.873048457733143
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,39,0.869,0.8710803955370293
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,40,0.869,0.8691436629753783
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,41,0.869,0.8672265123990135
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,42,0.869,0.8653171961587584
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,43,0.869,0.8634039666054364
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,44,0.869,0.8614750760898712
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,45,0.849,0.8595187769628861
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,46,0.849,0.8575233215753049
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,47,0.849,0.8554769622779507
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,48,0.849,0.8533679514216471
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,49,0.849,0.8511845413572178
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,50,0.849,0.8490626723769412
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,51,0.849,0.8471031900983946
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,52,0.849,0.8452417048603493
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,53,0.849,0.8434138270015774
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,54,0.849,0.8415551668608496
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,55,0.829,0.839601334776938
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,56,0.829,0.837487941088614
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,57,0.829,0.835150596134649
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,58,0.829,0.8325249102538147
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,59,0.829,0.8295464937848827
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,60,0.829,0.8261408718954906
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,61,0.829,0.8223283030045223
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,62,0.829,0.8181864973276186
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,63,0.829,0.8137931650804191
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,64,0.829,0.8092260164785647
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,65,0.796,0.8045627617376957
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,66,0.796,0.7998811110734524
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,67,0.796,0.795258774701475
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,68,0.796,0.7907734628374042
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,69,0.796,0.7865028856968801
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,70,0.796,0.7825247534955432
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,71,0.796,0.7786161160534333
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,72,0.796,0.7745480406456551
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,73,0.796,0.7703892636704461
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,74,0.796,0.766208521526045
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,75,0.724,0.7620745506106891
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,76,0.724,0.7580560873226162
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,77,0.724,0.7542218680600642
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,78,0.724,0.7506406292212712
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,79,0.724,0.7473811072044746
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,80,0.724,0.7445120384079127
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,81,0.724,0.7418886272192249
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,82,0.724,0.7393323253530704
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,83,0.724,0.7368612401982156
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,84,0.724,0.7344934791434274
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,85,0.724,0.7322471495774723
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,86,0.724,0.7301403588891173
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,87,0.724,0.7281912144671286
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,88,0.724,0.7264178237002734
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,89,0.724,0.7248382939773179
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,90,0.724,0.7234707326870293
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,91,0.724,0.7223133608580247
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,92,0.724,0.7213481412436659
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,93,0.724,0.7205687938198359
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,94,0.724,0.7199690385624179
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,95,0.724,0.7195425954472954
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,96,0.724,0.7192831844503508
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,97,0.724,0.7191845255474677
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,98,0.724,0.719240338714529
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,99,0.724,0.719444343927418
+Rampakakis et al. 2017 Argentina,Argentina,Janssen et al.,100,0.724,0.7197902611620176
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,18,0.873,0.8854718207624798
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,19,0.873,0.8825730442321693
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,20,0.876,0.8796745135054226
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,21,0.876,0.8767720774569682
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,22,0.876,0.8738615849615343
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,23,0.876,0.8709388848938499
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,24,0.876,0.8679998261286429
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,25,0.859,0.8650402575406421
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,26,0.859,0.862056028004576
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,27,0.859,0.8590429863951731
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,28,0.859,0.8559969815871616
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,29,0.859,0.8529056368293785
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,30,0.85,0.8497673068744681
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,31,0.85,0.8465939378528695
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,32,0.85,0.8433974758950235
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,33,0.85,0.8401898671313691
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,34,0.85,0.8369830576923467
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,35,0.834,0.8337889937083955
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,36,0.834,0.8306196213099561
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,37,0.834,0.8274868866274678
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,38,0.834,0.8244027357913706
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,39,0.834,0.8212422104025666
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,40,0.817,0.8179029258665242
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,41,0.817,0.8144306890205334
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,42,0.817,0.8108713067018822
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,43,0.817,0.8072705857478606
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,44,0.817,0.8036743329957576
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,45,0.801,0.8001283552828622
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,46,0.801,0.7966784594464636
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,47,0.801,0.7933704523238514
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,48,0.801,0.7902501407523144
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,49,0.801,0.7873633315691417
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,50,0.765,0.7845868919959823
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,51,0.765,0.7817910572323714
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,52,0.765,0.7790116860824275
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,53,0.765,0.7762846373502704
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,54,0.765,0.7736457698400186
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,55,0.762,0.7711309423557913
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,56,0.762,0.7687760137017075
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,57,0.762,0.7666168426818861
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,58,0.762,0.7646892881004462
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,59,0.762,0.7630292087615069
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,60,0.761,0.7617088614626624
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,61,0.761,0.7607410063149412
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,62,0.761,0.7600722570926135
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,63,0.761,0.7596492275699496
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,64,0.761,0.7594185315212196
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,65,0.761,0.7593267827206938
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,66,0.761,0.7593205949426424
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,67,0.761,0.7593465819613355
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,68,0.761,0.7593513575510437
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,69,0.761,0.7592815354860366
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,70,0.761,0.759083729540585
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,71,0.761,0.7588635993109165
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,72,0.761,0.758749151695992
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,73,0.761,0.7587205214241807
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,74,0.761,0.7587578432238525
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,75,0.761,0.7588412518233768
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,76,0.761,0.7589508819511233
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,77,0.761,0.759066868335461
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,78,0.761,0.7591693457047601
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,79,0.761,0.7592384487873896
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,80,0.761,0.7592543123117194
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,81,0.761,0.759256370300281
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,82,0.761,0.7592944201149121
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,83,0.761,0.7593641414929402
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,84,0.761,0.7594612141716944
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,85,0.761,0.759581317888502
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,86,0.761,0.7597201323806919
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,87,0.761,0.7598733373855917
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,88,0.761,0.7600366126405299
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,89,0.761,0.7602056378828345
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,90,0.761,0.7603760928498338
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,91,0.761,0.7605493834966736
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,92,0.761,0.760730713802799
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,93,0.761,0.7609214605419868
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,94,0.761,0.7611230004880143
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,95,0.761,0.7613367104146581
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,96,0.761,0.7615639670956952
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,97,0.761,0.7618061473049021
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,98,0.761,0.7620646278160561
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,99,0.761,0.7623407854029343
+Rampakakis et al. 2017 Costa Rica,Brazil,Santos et al.,100,0.761,0.7626359968393129
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,18,0.957,0.9506225131279625
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,19,0.957,0.9527585270651882
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,20,0.957,0.9546669410845244
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,21,0.957,0.9563462107280364
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,22,0.957,0.9577947915377889
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,23,0.957,0.9590111390558467
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,24,0.957,0.9599937088242748
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,25,0.958,0.9607409563851381
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,26,0.958,0.9612513372805017
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,27,0.958,0.9615233070524306
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,28,0.958,0.9615553212429893
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,29,0.958,0.9613383366080623
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,30,0.958,0.9608682407837426
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,31,0.958,0.9601508856324066
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,32,0.958,0.9591921230164324
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,33,0.958,0.9579978047981967
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,34,0.958,0.9565737828400774
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,35,0.949,0.9549259090044512
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,36,0.949,0.9530600351536958
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,37,0.949,0.9509820131501879
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,38,0.949,0.9486976948563056
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,39,0.949,0.946128817438954
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,40,0.949,0.9432129515889301
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,41,0.949,0.9399796994544487
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,42,0.949,0.9364586631837233
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,43,0.949,0.9326794449249686
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,44,0.949,0.9286716468263988
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,45,0.915,0.9244648710362282
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,46,0.915,0.9200887197026709
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,47,0.915,0.9155727949739416
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,48,0.915,0.910946698998254
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,49,0.915,0.9062400339238229
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,50,0.915,0.9010112429808403
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,51,0.915,0.89493795731629
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,52,0.915,0.888228560953572
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,53,0.915,0.8810914379160885
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,54,0.915,0.873734972227239
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,55,0.828,0.8663675479104251
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,56,0.828,0.8591975489890475
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,57,0.828,0.8524333594865072
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,58,0.828,0.8462833634262047
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,59,0.828,0.8409559448315411
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,60,0.828,0.8360179804541376
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,61,0.828,0.8309467738680514
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,62,0.828,0.8258163493303384
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,63,0.828,0.8207007310980537
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,64,0.828,0.8156739434282526
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,65,0.787,0.8108100105779911
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,66,0.787,0.8061829568043238
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,67,0.787,0.80186680636430685
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,68,0.787,0.7979355835149953
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,69,0.787,0.7944633125134444
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,70,0.787,0.79152401761671
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,71,0.787,0.7890963946704977
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,72,0.787,0.7870742045262299
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,73,0.787,0.7854040689495355
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,74,0.787,0.7840326097060446
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,75,0.787,0.7829064485613864
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,76,0.787,0.7819722072811907
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,77,0.787,0.7811765076310865
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,78,0.787,0.7804659713767038
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,79,0.787,0.7797872202836718
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,80,0.787,0.7790868761176201
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,81,0.787,0.778471747934693
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,82,0.787,0.7780763320590763
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,83,0.787,0.7778887811584623
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,84,0.787,0.7778972479005435
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,85,0.787,0.7780898849530117
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,86,0.787,0.7784548449835597
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,87,0.787,0.778980280659879
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,88,0.787,0.7796543446496627
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,89,0.787,0.7804651896206022
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,90,0.787,0.7814009682403904
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,91,0.787,0.7824618021849081
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,92,0.787,0.7836585721949425
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,93,0.787,0.7849955695355432
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,94,0.787,0.7864770854717607
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,95,0.787,0.7881074112686453
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,96,0.787,0.7898908381912472
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,97,0.787,0.7918316575046167
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,98,0.787,0.793934160473804
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,99,0.787,0.7962026383638596
+Rampakakis et al. 2017 Korea,Korea,Janssen et al.,100,0.787,0.7986413824398336
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,18,0.873,0.8854718207624798
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,19,0.873,0.8825730442321693
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,20,0.876,0.8796745135054226
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,21,0.876,0.8767720774569682
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,22,0.876,0.8738615849615343
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,23,0.876,0.8709388848938499
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,24,0.876,0.8679998261286429
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,25,0.859,0.8650402575406421
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,26,0.859,0.862056028004576
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,27,0.859,0.8590429863951731
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,28,0.859,0.8559969815871616
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,29,0.859,0.8529056368293785
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,30,0.85,0.8497673068744681
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,31,0.85,0.8465939378528695
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,32,0.85,0.8433974758950235
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,33,0.85,0.8401898671313691
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,34,0.85,0.8369830576923467
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,35,0.834,0.8337889937083955
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,36,0.834,0.8306196213099561
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,37,0.834,0.8274868866274678
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,38,0.834,0.8244027357913706
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,39,0.834,0.8212422104025666
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,40,0.817,0.8179029258665242
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,41,0.817,0.8144306890205334
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,42,0.817,0.8108713067018822
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,43,0.817,0.8072705857478606
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,44,0.817,0.8036743329957576
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,45,0.801,0.8001283552828622
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,46,0.801,0.7966784594464636
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,47,0.801,0.7933704523238514
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,48,0.801,0.7902501407523144
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,49,0.801,0.7873633315691417
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,50,0.765,0.7845868919959823
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,51,0.765,0.7817910572323714
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,52,0.765,0.7790116860824275
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,53,0.765,0.7762846373502704
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,54,0.765,0.7736457698400186
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,55,0.762,0.7711309423557913
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,56,0.762,0.7687760137017075
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,57,0.762,0.7666168426818861
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,58,0.762,0.7646892881004462
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,59,0.762,0.7630292087615069
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,60,0.761,0.7617088614626624
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,61,0.761,0.7607410063149412
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,62,0.761,0.7600722570926135
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,63,0.761,0.7596492275699496
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,64,0.761,0.7594185315212196
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,65,0.761,0.7593267827206938
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,66,0.761,0.7593205949426424
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,67,0.761,0.7593465819613355
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,68,0.761,0.7593513575510437
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,69,0.761,0.7592815354860366
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,70,0.761,0.759083729540585
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,71,0.761,0.7588635993109165
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,72,0.761,0.758749151695992
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,73,0.761,0.7587205214241807
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,74,0.761,0.7587578432238525
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,75,0.761,0.7588412518233768
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,76,0.761,0.7589508819511233
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,77,0.761,0.759066868335461
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,78,0.761,0.7591693457047601
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,79,0.761,0.7592384487873896
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,80,0.761,0.7592543123117194
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,81,0.761,0.759256370300281
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,82,0.761,0.7592944201149121
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,83,0.761,0.7593641414929402
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,84,0.761,0.7594612141716944
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,85,0.761,0.759581317888502
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,86,0.761,0.7597201323806919
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,87,0.761,0.7598733373855917
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,88,0.761,0.7600366126405299
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,89,0.761,0.7602056378828345
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,90,0.761,0.7603760928498338
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,91,0.761,0.7605493834966736
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,92,0.761,0.760730713802799
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,93,0.761,0.7609214605419868
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,94,0.761,0.7611230004880143
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,95,0.761,0.7613367104146581
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,96,0.761,0.7615639670956952
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,97,0.761,0.7618061473049021
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,98,0.761,0.7620646278160561
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,99,0.761,0.7623407854029343
+Rampakakis et al. 2017 Mexico,Brazil,Santos et al.,100,0.761,0.7626359968393129
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,18,0.957,0.9506225131279625
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,19,0.957,0.9527585270651882
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,20,0.957,0.9546669410845244
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,21,0.957,0.9563462107280364
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,22,0.957,0.9577947915377889
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,23,0.957,0.9590111390558467
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,24,0.957,0.9599937088242748
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,25,0.958,0.9607409563851381
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,26,0.958,0.9612513372805017
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,27,0.958,0.9615233070524306
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,28,0.958,0.9615553212429893
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,29,0.958,0.9613383366080623
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,30,0.958,0.9608682407837426
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,31,0.958,0.9601508856324066
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,32,0.958,0.9591921230164324
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,33,0.958,0.9579978047981967
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,34,0.958,0.9565737828400774
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,35,0.949,0.9549259090044512
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,36,0.949,0.9530600351536958
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,37,0.949,0.9509820131501879
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,38,0.949,0.9486976948563056
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,39,0.949,0.946128817438954
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,40,0.949,0.9432129515889301
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,41,0.949,0.9399796994544487
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,42,0.949,0.9364586631837233
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,43,0.949,0.9326794449249686
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,44,0.949,0.9286716468263988
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,45,0.915,0.9244648710362282
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,46,0.915,0.9200887197026709
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,47,0.915,0.9155727949739416
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,48,0.915,0.910946698998254
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,49,0.915,0.9062400339238229
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,50,0.915,0.9010112429808403
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,51,0.915,0.89493795731629
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,52,0.915,0.888228560953572
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,53,0.915,0.8810914379160885
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,54,0.915,0.873734972227239
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,55,0.828,0.8663675479104251
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,56,0.828,0.8591975489890475
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,57,0.828,0.8524333594865072
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,58,0.828,0.8462833634262047
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,59,0.828,0.8409559448315411
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,60,0.828,0.8360179804541376
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,61,0.828,0.8309467738680514
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,62,0.828,0.8258163493303384
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,63,0.828,0.8207007310980537
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,64,0.828,0.8156739434282526
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,65,0.787,0.8108100105779911
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,66,0.787,0.8061829568043238
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,67,0.787,0.80186680636430685
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,68,0.787,0.7979355835149953
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,69,0.787,0.7944633125134444
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,70,0.787,0.79152401761671
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,71,0.787,0.7890963946704977
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,72,0.787,0.7870742045262299
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,73,0.787,0.7854040689495355
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,74,0.787,0.7840326097060446
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,75,0.787,0.7829064485613864
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,76,0.787,0.7819722072811907
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,77,0.787,0.7811765076310865
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,78,0.787,0.7804659713767038
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,79,0.787,0.7797872202836718
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,80,0.787,0.7790868761176201
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,81,0.787,0.778471747934693
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,82,0.787,0.7780763320590763
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,83,0.787,0.7778887811584623
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,84,0.787,0.7778972479005435
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,85,0.787,0.7780898849530117
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,86,0.787,0.7784548449835597
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,87,0.787,0.778980280659879
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,88,0.787,0.7796543446496627
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,89,0.787,0.7804651896206022
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,90,0.787,0.7814009682403904
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,91,0.787,0.7824618021849081
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,92,0.787,0.7836585721949425
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,93,0.787,0.7849955695355432
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,94,0.787,0.7864770854717607
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,95,0.787,0.7881074112686453
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,96,0.787,0.7898908381912472
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,97,0.787,0.7918316575046167
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,98,0.787,0.793934160473804
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,99,0.787,0.7962026383638596
+Rampakakis et al. 2017 Taiwan,Korea,Janssen et al.,100,0.787,0.7986413824398336
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,18,0.814,0.81800900243913
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,19,0.814,0.8156340033170326
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,20,0.814,0.8132309743144638
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,21,0.814,0.8107974778222624
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,22,0.814,0.808331076231267
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,23,0.814,0.8058293319323164
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,24,0.814,0.8032898073162495
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,25,0.785,0.8007100647739054
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,26,0.785,0.7980876666961226
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,27,0.785,0.7954201754737402
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,28,0.785,0.7927051534975967
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,29,0.785,0.7899349389297883
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,30,0.785,0.7871082626438962
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,31,0.785,0.7842322760979876
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,32,0.785,0.7813141307501303
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,33,0.785,0.7783609780583912
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,34,0.785,0.7753799694808379
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,35,0.771,0.7723782564755374
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,36,0.771,0.7693629905005576
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,37,0.771,0.7663413230139651
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,38,0.771,0.7633204054738278
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,39,0.771,0.760242868938569
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,40,0.771,0.7570597423830662
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,41,0.771,0.7537907741400685
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,42,0.771,0.7504557125423242
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,43,0.771,0.7470743059225824
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,44,0.771,0.7436663026135918
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,45,0.717,0.740251450948101
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,46,0.717,0.7368494992588587
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,47,0.717,0.7334801958786138
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,48,0.717,0.730163289140115
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,49,0.717,0.726918527376111
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,50,0.717,0.7236159951972994
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,51,0.717,0.7201487935902384
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,52,0.717,0.7165711954514673
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,53,0.717,0.7129374736775262
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,54,0.717,0.7093019011649542
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,55,0.694,0.7057187508102909
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,56,0.694,0.7022422955100758
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,57,0.694,0.6989268081608487
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,58,0.694,0.695826561659149
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,59,0.694,0.6929958289015162
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,60,0.694,0.6903841424613503
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,61,0.694,0.6879004320520509
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,62,0.694,0.6855380662801571
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,63,0.694,0.683290413752208
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,64,0.694,0.6811508430747427
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,65,0.67,0.6791127228543004
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,66,0.67,0.6771694216974198
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,67,0.67,0.6753143082106402
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,68,0.67,0.6735407510005008
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,69,0.67,0.6718421186735406
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,70,0.67,0.6702117798362988
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,71,0.67,0.6686585232696364
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,72,0.67,0.6671946112445628
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,73,0.67,0.6658186226028389
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,74,0.67,0.6645291361862263
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,75,0.657,0.6633247308364856
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,76,0.657,0.6622039853953784
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,77,0.657,0.6611654787046651
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,78,0.657,0.6602077896061079
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,79,0.657,0.659329496941467
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,80,0.657,0.6585291795525039
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,81,0.657,0.6578078835458064
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,82,0.657,0.6571679306168744
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,83,0.657,0.6566098129908372
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,84,0.657,0.6561340228928245
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,85,0.657,0.6557410525479653
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,86,0.657,0.6554313941813892
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,87,0.657,0.6552055400182256
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,88,0.657,0.6550639822836036
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,89,0.657,0.6550072132026529
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,90,0.657,0.6550357250005028
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,91,0.657,0.6551489150143207
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,92,0.657,0.6553457947845761
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,93,0.657,0.6556262778413521
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,94,0.657,0.6559902777147311
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,95,0.657,0.6564377079347959
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,96,0.657,0.6569684820316289
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,97,0.657,0.6575825135353132
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,98,0.657,0.6582797159759309
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,99,0.657,0.6590600028835653
+Rampakakis et al. 2017 Thailand,Thailand,Janssen et al.,100,0.657,0.6599232877882986
+Scott et al. 2006,UK,McNamara et al.,0,0.8983653442571508,0.8967289643453845
+Scott et al. 2006,UK,McNamara et al.,1,0.8983653442571508,0.8972412742288971
+Scott et al. 2006,UK,McNamara et al.,2,0.8983653442571508,0.8976753728271636
+Scott et al. 2006,UK,McNamara et al.,3,0.8983653442571508,0.8980308890489502
+Scott et al. 2006,UK,McNamara et al.,4,0.8983653442571508,0.8983074518030245
+Scott et al. 2006,UK,McNamara et al.,5,0.8983653442571508,0.8985046899981526
+Scott et al. 2006,UK,McNamara et al.,6,0.8983653442571508,0.8986222325431015
+Scott et al. 2006,UK,McNamara et al.,7,0.8983653442571508,0.8986597083466383
+Scott et al. 2006,UK,McNamara et al.,8,0.8983653442571508,0.8986167463175291
+Scott et al. 2006,UK,McNamara et al.,9,0.8983653442571508,0.8984929753645412
+Scott et al. 2006,UK,McNamara et al.,10,0.8983653442571508,0.898288024396441
+Scott et al. 2006,UK,McNamara et al.,11,0.8983653442571508,0.8980015223219958
+Scott et al. 2006,UK,McNamara et al.,12,0.8983653442571508,0.8976330980499718
+Scott et al. 2006,UK,McNamara et al.,13,0.8983653442571508,0.8971793700347102
+Scott et al. 2006,UK,McNamara et al.,14,0.8983653442571508,0.896638173369302
+Scott et al. 2006,UK,McNamara et al.,15,0.8983653442571508,0.8960109619206396
+Scott et al. 2006,UK,McNamara et al.,16,0.8983653442571508,0.8952991895556156
+Scott et al. 2006,UK,McNamara et al.,17,0.8983653442571508,0.8945043101411224
+Scott et al. 2006,UK,McNamara et al.,18,0.8942223114695699,0.8936277775440521
+Scott et al. 2006,UK,McNamara et al.,19,0.8942223114695699,0.8926710456312972
+Scott et al. 2006,UK,McNamara et al.,20,0.8770606569713967,0.8916355682697503
+Scott et al. 2006,UK,McNamara et al.,21,0.8770606569713967,0.8905227993263035
+Scott et al. 2006,UK,McNamara et al.,22,0.8770606569713967,0.8893341926678493
+Scott et al. 2006,UK,McNamara et al.,23,0.8770606569713967,0.8880712021612803
+Scott et al. 2006,UK,McNamara et al.,24,0.8770606569713967,0.8867352816734886
+Scott et al. 2006,UK,McNamara et al.,25,0.8824664537263252,0.8853278850713667
+Scott et al. 2006,UK,McNamara et al.,26,0.8824664537263252,0.8838229439002061
+Scott et al. 2006,UK,McNamara et al.,27,0.8824664537263252,0.8821990205759708
+Scott et al. 2006,UK,McNamara et al.,28,0.8824664537263252,0.8804645152715621
+Scott et al. 2006,UK,McNamara et al.,29,0.8824664537263252,0.8786278281598818
+Scott et al. 2006,UK,McNamara et al.,30,0.8924247801531272,0.8766973594138311
+Scott et al. 2006,UK,McNamara et al.,31,0.8924247801531272,0.8746815092063113
+Scott et al. 2006,UK,McNamara et al.,32,0.8924247801531272,0.8725886777102241
+Scott et al. 2006,UK,McNamara et al.,33,0.8924247801531272,0.8704272650984708
+Scott et al. 2006,UK,McNamara et al.,34,0.8924247801531272,0.8682056715439527
+Scott et al. 2006,UK,McNamara et al.,35,0.8583386764236658,0.8659322972195714
+Scott et al. 2006,UK,McNamara et al.,36,0.8583386764236658,0.8636155422982285
+Scott et al. 2006,UK,McNamara et al.,37,0.8583386764236658,0.861263806952825
+Scott et al. 2006,UK,McNamara et al.,38,0.8583386764236658,0.8588854913562627
+Scott et al. 2006,UK,McNamara et al.,39,0.8583386764236658,0.8563565972035146
+Scott et al. 2006,UK,McNamara et al.,40,0.8590127580040747,0.8535788114089786
+Scott et al. 2006,UK,McNamara et al.,41,0.8590127580040747,0.8505990619746917
+Scott et al. 2006,UK,McNamara et al.,42,0.8590127580040747,0.8474642769026921
+Scott et al. 2006,UK,McNamara et al.,43,0.8590127580040747,0.8442213841950174
+Scott et al. 2006,UK,McNamara et al.,44,0.8590127580040747,0.8409173118537053
+Scott et al. 2006,UK,McNamara et al.,45,0.8140806869843563,0.8375989878807935
+Scott et al. 2006,UK,McNamara et al.,46,0.8140806869843563,0.8343133402783195
+Scott et al. 2006,UK,McNamara et al.,47,0.8140806869843563,0.8311072970483211
+Scott et al. 2006,UK,McNamara et al.,48,0.8140806869843563,0.8280277861928361
+Scott et al. 2006,UK,McNamara et al.,49,0.8140806869843563,0.8251217357139019
+Scott et al. 2006,UK,McNamara et al.,50,0.8168027391759443,0.8224360736135566
+Scott et al. 2006,UK,McNamara et al.,51,0.8168027391759443,0.8199816797406498
+Scott et al. 2006,UK,McNamara et al.,52,0.8168027391759443,0.8177135285087294
+Scott et al. 2006,UK,McNamara et al.,53,0.8168027391759443,0.8155946897668795
+Scott et al. 2006,UK,McNamara et al.,54,0.8168027391759443,0.8135882333641853
+Scott et al. 2006,UK,McNamara et al.,55,0.799706716138512,0.811657229149731
+Scott et al. 2006,UK,McNamara et al.,56,0.799706716138512,0.809764746972601
+Scott et al. 2006,UK,McNamara et al.,57,0.799706716138512,0.8078738566818803
+Scott et al. 2006,UK,McNamara et al.,58,0.799706716138512,0.8059476281266532
+Scott et al. 2006,UK,McNamara et al.,59,0.799706716138512,0.803949131156004
+Scott et al. 2006,UK,McNamara et al.,60,0.789180770496633,0.8018414356190176
+Scott et al. 2006,UK,McNamara et al.,61,0.789180770496633,0.7995876113647786
+Scott et al. 2006,UK,McNamara et al.,62,0.789180770496633,0.7971507282423712
+Scott et al. 2006,UK,McNamara et al.,63,0.789180770496633,0.7944938561008803
+Scott et al. 2006,UK,McNamara et al.,64,0.789180770496633,0.791696883769206
+Scott et al. 2006,UK,McNamara et al.,65,0.7855595687035867,0.7888588939049761
+Scott et al. 2006,UK,McNamara et al.,66,0.7855595687035867,0.7859717471003654
+Scott et al. 2006,UK,McNamara et al.,67,0.7855595687035867,0.7830273039475497
+Scott et al. 2006,UK,McNamara et al.,68,0.7855595687035867,0.7800174250387042
+Scott et al. 2006,UK,McNamara et al.,69,0.7855595687035867,0.7769339709660043
+Scott et al. 2006,UK,McNamara et al.,70,0.7921420009714646,0.7737688023216254
+Scott et al. 2006,UK,McNamara et al.,71,0.7921420009714646,0.7705137796977426
+Scott et al. 2006,UK,McNamara et al.,72,0.7921420009714646,0.7671607636865316
+Scott et al. 2006,UK,McNamara et al.,73,0.7921420009714646,0.7637016148801675
+Scott et al. 2006,UK,McNamara et al.,74,0.7921420009714646,0.7601281938708256
+Scott et al. 2006,UK,McNamara et al.,75,0.7570600572178829,0.7564323612506815
+Scott et al. 2006,UK,McNamara et al.,76,0.7570600572178829,0.7526446108754342
+Scott et al. 2006,UK,McNamara et al.,77,0.7570600572178829,0.7487982179726173
+Scott et al. 2006,UK,McNamara et al.,78,0.7570600572178829,0.7448892151921566
+Scott et al. 2006,UK,McNamara et al.,79,0.7570600572178829,0.7409136351839792
+Scott et al. 2006,UK,McNamara et al.,80,0.7351890876753938,0.7368675105980113
+Scott et al. 2006,UK,McNamara et al.,81,0.7351890876753938,0.7327468740841793
+Scott et al. 2006,UK,McNamara et al.,82,0.7351890876753938,0.7285477582924096
+Scott et al. 2006,UK,McNamara et al.,83,0.7351890876753938,0.7242661958726287
+Scott et al. 2006,UK,McNamara et al.,84,0.7351890876753938,0.7198982194747632
+Scott et al. 2006,UK,McNamara et al.,85,0.6907670924827474,0.715439861748739
+Scott et al. 2006,UK,McNamara et al.,86,0.6907670924827474,0.7108871553444834
+Scott et al. 2006,UK,McNamara et al.,87,0.6907670924827474,0.7062361329119219
+Scott et al. 2006,UK,McNamara et al.,88,0.6907670924827474,0.7014828271009816
+Scott et al. 2006,UK,McNamara et al.,89,0.6907670924827474,0.696629585539332
+Scott et al. 2006,UK,McNamara et al.,90,0.662229247606729,0.6916823355321415
+Scott et al. 2006,UK,McNamara et al.,91,0.662229247606729,0.6866424792455865
+Scott et al. 2006,UK,McNamara et al.,92,0.662229247606729,0.6815114188458419
+Scott et al. 2006,UK,McNamara et al.,93,0.662229247606729,0.6762905564990833
+Scott et al. 2006,UK,McNamara et al.,94,0.662229247606729,0.6709812943714859
+Scott et al. 2006,UK,McNamara et al.,95,0.662229247606729,0.6655850346292254
+Scott et al. 2006,UK,McNamara et al.,96,0.662229247606729,0.6601031794384772
+Scott et al. 2006,UK,McNamara et al.,97,0.662229247606729,0.6545371309654168
+Scott et al. 2006,UK,McNamara et al.,98,0.662229247606729,0.6488882913762196
+Scott et al. 2006,UK,McNamara et al.,99,0.662229247606729,0.643158062837061
+Scott et al. 2006,UK,McNamara et al.,100,0.662229247606729,0.63734784751411655
+van Wijck et al. 2016,Netherlands,Janssen et al.,18,0.938,0.9363659774851801
+van Wijck et al. 2016,Netherlands,Janssen et al.,19,0.938,0.9350768839642142
+van Wijck et al. 2016,Netherlands,Janssen et al.,20,0.938,0.933774400544763
+van Wijck et al. 2016,Netherlands,Janssen et al.,21,0.938,0.9324563656060335
+van Wijck et al. 2016,Netherlands,Janssen et al.,22,0.938,0.9311206175272331
+van Wijck et al. 2016,Netherlands,Janssen et al.,23,0.938,0.9297649946875688
+van Wijck et al. 2016,Netherlands,Janssen et al.,24,0.938,0.9283873354662479
+van Wijck et al. 2016,Netherlands,Janssen et al.,25,0.91,0.9269854782424777
+van Wijck et al. 2016,Netherlands,Janssen et al.,26,0.91,0.9255572613954652
+van Wijck et al. 2016,Netherlands,Janssen et al.,27,0.91,0.9241005233044179
+van Wijck et al. 2016,Netherlands,Janssen et al.,28,0.91,0.9226131023485429
+van Wijck et al. 2016,Netherlands,Janssen et al.,29,0.91,0.9210870829725204
+van Wijck et al. 2016,Netherlands,Janssen et al.,30,0.91,0.9195204611457275
+van Wijck et al. 2016,Netherlands,Janssen et al.,31,0.91,0.9179199425344159
+van Wijck et al. 2016,Netherlands,Janssen et al.,32,0.91,0.916292232804839
+van Wijck et al. 2016,Netherlands,Janssen et al.,33,0.91,0.9146440376232482
+van Wijck et al. 2016,Netherlands,Janssen et al.,34,0.91,0.9129820626558964
+van Wijck et al. 2016,Netherlands,Janssen et al.,35,0.922,0.9113130135690356
+van Wijck et al. 2016,Netherlands,Janssen et al.,36,0.922,0.9096435960289183
+van Wijck et al. 2016,Netherlands,Janssen et al.,37,0.922,0.9079805157017966
+van Wijck et al. 2016,Netherlands,Janssen et al.,38,0.922,0.9063304782539232
+van Wijck et al. 2016,Netherlands,Janssen et al.,39,0.922,0.9046691712165675
+van Wijck et al. 2016,Netherlands,Janssen et al.,40,0.922,0.9029717758258838
+van Wijck et al. 2016,Netherlands,Janssen et al.,41,0.922,0.9012442383054523
+van Wijck et al. 2016,Netherlands,Janssen et al.,42,0.922,0.8994925048788525
+van Wijck et al. 2016,Netherlands,Janssen et al.,43,0.922,0.8977225217696637
+van Wijck et al. 2016,Netherlands,Janssen et al.,44,0.922,0.8959402352014662
+van Wijck et al. 2016,Netherlands,Janssen et al.,45,0.874,0.8941515913978394
+van Wijck et al. 2016,Netherlands,Janssen et al.,46,0.874,0.892362536582363
+van Wijck et al. 2016,Netherlands,Janssen et al.,47,0.874,0.8905790169786169
+van Wijck et al. 2016,Netherlands,Janssen et al.,48,0.874,0.8888069788101804
+van Wijck et al. 2016,Netherlands,Janssen et al.,49,0.874,0.8870523683006337
+van Wijck et al. 2016,Netherlands,Janssen et al.,50,0.874,0.8853675508310177
+van Wijck et al. 2016,Netherlands,Janssen et al.,51,0.874,0.883778656836132
+van Wijck et al. 2016,Netherlands,Janssen et al.,52,0.874,0.8822522801201934
+van Wijck et al. 2016,Netherlands,Janssen et al.,53,0.874,0.8807550144874197
+van Wijck et al. 2016,Netherlands,Janssen et al.,54,0.874,0.8792534537420273
+van Wijck et al. 2016,Netherlands,Janssen et al.,55,0.869,0.8777141916882341
+van Wijck et al. 2016,Netherlands,Janssen et al.,56,0.869,0.8761038221302566
+van Wijck et al. 2016,Netherlands,Janssen et al.,57,0.869,0.8743889388723123
+van Wijck et al. 2016,Netherlands,Janssen et al.,58,0.869,0.8725361357186182
+van Wijck et al. 2016,Netherlands,Janssen et al.,59,0.869,0.8705120064733918
+van Wijck et al. 2016,Netherlands,Janssen et al.,60,0.869,0.8683893568139662
+van Wijck et al. 2016,Netherlands,Janssen et al.,61,0.869,0.8662593967497907
+van Wijck et al. 2016,Netherlands,Janssen et al.,62,0.869,0.864116326583256
+van Wijck et al. 2016,Netherlands,Janssen et al.,63,0.869,0.8619543466167522
+van Wijck et al. 2016,Netherlands,Janssen et al.,64,0.869,0.8597676571526693
+van Wijck et al. 2016,Netherlands,Janssen et al.,65,0.863,0.8575504584933985
+van Wijck et al. 2016,Netherlands,Janssen et al.,66,0.863,0.8552969509413295
+van Wijck et al. 2016,Netherlands,Janssen et al.,67,0.863,0.8530013347988532
+van Wijck et al. 2016,Netherlands,Janssen et al.,68,0.863,0.8506578103683595
+van Wijck et al. 2016,Netherlands,Janssen et al.,69,0.863,0.8482605779522391
+van Wijck et al. 2016,Netherlands,Janssen et al.,70,0.863,0.8458038378528825
+van Wijck et al. 2016,Netherlands,Janssen et al.,71,0.863,0.8431895400902817
+van Wijck et al. 2016,Netherlands,Janssen et al.,72,0.863,0.8403658651374121
+van Wijck et al. 2016,Netherlands,Janssen et al.,73,0.863,0.8373963589761377
+van Wijck et al. 2016,Netherlands,Janssen et al.,74,0.863,0.8343445675883238
+van Wijck et al. 2016,Netherlands,Janssen et al.,75,0.798,0.8312740369558337
+van Wijck et al. 2016,Netherlands,Janssen et al.,76,0.798,0.8282483130605329
+van Wijck et al. 2016,Netherlands,Janssen et al.,77,0.798,0.8253309418842851
+van Wijck et al. 2016,Netherlands,Janssen et al.,78,0.798,0.8225854694089555
+van Wijck et al. 2016,Netherlands,Janssen et al.,79,0.798,0.8200754416164079
+van Wijck et al. 2016,Netherlands,Janssen et al.,80,0.798,0.8178644044885072
+van Wijck et al. 2016,Netherlands,Janssen et al.,81,0.798,0.815819025095631
+van Wijck et al. 2016,Netherlands,Janssen et al.,82,0.798,0.8137745266429042
+van Wijck et al. 2016,Netherlands,Janssen et al.,83,0.798,0.8117472893143106
+van Wijck et al. 2016,Netherlands,Janssen et al.,84,0.798,0.8097536932938357
+van Wijck et al. 2016,Netherlands,Janssen et al.,85,0.798,0.8078101187654629
+van Wijck et al. 2016,Netherlands,Janssen et al.,86,0.798,0.8059329459131777
+van Wijck et al. 2016,Netherlands,Janssen et al.,87,0.798,0.8041385549209635
+van Wijck et al. 2016,Netherlands,Janssen et al.,88,0.798,0.8024433259728059
+van Wijck et al. 2016,Netherlands,Janssen et al.,89,0.798,0.8008636392526886
+van Wijck et al. 2016,Netherlands,Janssen et al.,90,0.798,0.7994158749445964
+van Wijck et al. 2016,Netherlands,Janssen et al.,91,0.798,0.798099927030803
+van Wijck et al. 2016,Netherlands,Janssen et al.,92,0.798,0.79690084436263
+van Wijck et al. 2016,Netherlands,Janssen et al.,93,0.798,0.7958127394276333
+van Wijck et al. 2016,Netherlands,Janssen et al.,94,0.798,0.7948297247133693
+van Wijck et al. 2016,Netherlands,Janssen et al.,95,0.798,0.7939459127073942
+van Wijck et al. 2016,Netherlands,Janssen et al.,96,0.798,0.7931554158972641
+van Wijck et al. 2016,Netherlands,Janssen et al.,97,0.798,0.7924523467705352
+van Wijck et al. 2016,Netherlands,Janssen et al.,98,0.798,0.7918308178147633
+van Wijck et al. 2016,Netherlands,Janssen et al.,99,0.798,0.7912849415175051
+van Wijck et al. 2016,Netherlands,Janssen et al.,100,0.798,0.7908088303663166
