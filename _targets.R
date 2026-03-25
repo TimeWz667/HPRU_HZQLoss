@@ -36,7 +36,7 @@ tar_source()
 # Replace the target list below with your own:
 list(
   tar_target(file_qol, here::here("data", "generated", "data_generated_11667.csv"), format = "file"),
-  tar_target(file_norm, here::here("data", "processed", "population_norm_mapped.csv"), format = "file"),
+  tar_target(file_norm, here::here("data", "processed", "pn_mapped.csv"), format = "file"),
   
   ## extraction
   tar_target(data_norm, read_csv(file_norm)),
@@ -75,21 +75,21 @@ list(
   tar_target(pars_qloss, boot_pars_bayes(file_posterior_tte, file_pars_qol, n_sim = n_mc)),
   tar_target(sim_qloss, simulate_ql(pars_qloss, age0 = 50, age1 = 99, age_until = 5, dt = 0.01)),
   tar_target(tab_qloss, summarise_ql(pars_qloss, sim_qloss)),
-  tar_target(out_gloss, save_tab(tab_qloss, key = "summary_qloss_ph")),
+  tar_target(out_gloss, save_tab(tab_qloss, key = "summary_qloss_ph"))
 
-  tar_target(pars_qloss_pn, boot_pars_bayes(file_posterior_tte_pn, file_pars_qol, n_sim = n_mc)),
-  tar_target(sim_qloss_pn, simulate_ql_pn(pars_qloss_pn, data_norm, age0 = 50, age1 = 99, age_until = 5, dt = 0.01)),
-  # tar_target(tab_qloss_pn_sub, summarise_ql_pn(sim_qloss_pn)),
-  # tar_target(out_gloss_pn_sub, save_tab(tab_qloss_pn_sub, key = "summary_qloss_pn_sub")),
-  tar_target(tab_qloss_pn_sub_short, simplify_ql_pn_sub_tabs(tab_qloss_pn_sub)),
-  tar_target(out_gloss_pn_sub_short, save_tab(tab_qloss_pn_sub_short, key = "summary_qloss_pn_sub")),
-
-  tar_target(data_norm_pooled, get_norm_wt(data_raw_pn, data_norm)),
-  tar_target(sim_qloss_pn_pooled, simulate_ql_pn(pars_qloss_pn, data_norm_pooled, age0 = 50, age1 = 99, age_until = 5, dt = 0.01)),
-  tar_target(tab_qloss_pn, summarise_ql(pars_qloss_pn, sim_qloss_pn_pooled)),
-  tar_target(out_gloss_pn, save_tab(tab_qloss_pn, key = "summary_qloss_pn")),
-
-
-  tar_target(tab_qloss_bind, bind_ql_tabs(tab_qloss_ph = tab_qloss, tab_qloss_pn, tab_qloss_pn, ages = seq(50, 90, 10))),
-  tar_target(out_gloss_bind, save_tab(tab_qloss_bind, key = "summary_qloss_bind"))
+  # tar_target(pars_qloss_pn, boot_pars_bayes(file_posterior_tte_pn, file_pars_qol, n_sim = n_mc)),
+  # tar_target(sim_qloss_pn, simulate_ql_pn(pars_qloss_pn, data_norm, age0 = 50, age1 = 99, age_until = 5, dt = 0.01)),
+  # # tar_target(tab_qloss_pn_sub, summarise_ql_pn(sim_qloss_pn)),
+  # # tar_target(out_gloss_pn_sub, save_tab(tab_qloss_pn_sub, key = "summary_qloss_pn_sub")),
+  # tar_target(tab_qloss_pn_sub_short, simplify_ql_pn_sub_tabs(tab_qloss_pn_sub)),
+  # tar_target(out_gloss_pn_sub_short, save_tab(tab_qloss_pn_sub_short, key = "summary_qloss_pn_sub")),
+  # 
+  # tar_target(data_norm_pooled, get_norm_wt(data_raw_pn, data_norm)),
+  # tar_target(sim_qloss_pn_pooled, simulate_ql_pn(pars_qloss_pn, data_norm_pooled, age0 = 50, age1 = 99, age_until = 5, dt = 0.01)),
+  # tar_target(tab_qloss_pn, summarise_ql(pars_qloss_pn, sim_qloss_pn_pooled)),
+  # tar_target(out_gloss_pn, save_tab(tab_qloss_pn, key = "summary_qloss_pn")),
+  # 
+  # 
+  # tar_target(tab_qloss_bind, bind_ql_tabs(tab_qloss_ph = tab_qloss, tab_qloss_pn, tab_qloss_pn, ages = seq(50, 90, 10))),
+  # tar_target(out_gloss_bind, save_tab(tab_qloss_bind, key = "summary_qloss_bind"))
 )

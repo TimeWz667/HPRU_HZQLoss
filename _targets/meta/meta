@@ -1,11 +1,43 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 file_model_tte|stem|ec1d35e068f867a0|37b9f4c90a3c16d9|2c530c1562a7fbd1|-508233647|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/models/time2zero_surv_age.stan|t20031.562796305s|s791b|791|file|local|vector|||0||
-file_norm|stem|03f60c29f18103e9|1293fe7e924d00e3|2c530c1562a7fbd1|164554510|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/data/processed/population_norm_mapped.csv|t20205.3573069223s|s61094b|61094|file|local|vector|||0||
 model_tte|stem|03b06caf336c9111|6d58dc69dfc2a3cd|51c85dc6b6d68da4|1423656442||t20535.7356377547s|s1463019b|1463019|rds|local|vector|||35.34|cannot resolve owner of file 'E:\Projects\HPRU\Shingrix\HPRU_HZQLoss\models\time2zero_surv_age.stan': No mapping between account names and security IDs was done|
-data_norm|stem|647b582049115843|a576c7650ed6fc4e|63975c2e22577830|528001548||t20535.7356387569s|s6351b|6351|rds|local|vector|||0.05||
 pars_qol_ce705937c98e5e99|branch||9e2f6e4d4f3c222f|980b893a7832aad0|-1900350813||t20535.7373731793s||0|rds|local|vector|pars_qol||0.08||cannot take a sample larger than the population when 'replace = FALSE'
 split_training_tte|function|76c6c8798135dc9e
 split_training_qol|function|98234a5a66385fb5
+data_norm_pooled|stem|711f05035a6e33ec|6a1c938b0fcfcefc|3967a1e3d8499e7e|137102075||t20536.3775927747s|s1363b|1363|rds|local|vector|||0.01||
+pars_qloss_pn|stem|3ff04320bf1607d1|f3e9dd668ef590e2|9848e982f272b275|-1811820398||t20536.3783044518s|s183440b|183440|rds|local|vector|||0.16||
+sim_qloss_pn|stem|2dd51fb640473e0f|6ec6522c32d4eefb|287d508c14296f04|-1713987709||t20536.3801399971s|s15707489b|15707489|rds|local|vector|||157.75||
+sim_qloss_pn_pooled|stem|6950145313e06342|6427125b0a4a523c|0eace5b03e201458|-816358819||t20536.3804657992s|s2216264b|2216264|rds|local|vector|||27.99||
+tab_qloss_pn_sub|stem|301494eebe29d5db|61d977ccf6b50a8c|dcea125231d261e5|1820400430||t20536.3804739909s|s33762b|33762|rds|local|vector|||0.37||
+tab_qloss_pn|stem|bec250928c541143|d346b6e7f0698885|8b3485e746cdee64|-2126181239||t20536.3804759854s|s8123b|8123|rds|local|vector|||0.12||
+tab_qloss_pn_sub_short|stem|fa6fa66490a16a0b|8522c46670649ace|9cd801d35e9882e8|-1839356874||t20536.380476194s|s878b|878|rds|local|vector|||0.01||
+out_gloss_pn_sub|stem|301494eebe29d5db|31a5efb31734e0ca|2a4ba6c619d7509f|-1198880009||t20536.3804770686s|s33762b|33762|rds|local|vector|||0.07||
+out_gloss_pn|stem|bec250928c541143|4418f76283353c41|676121be8d90e3ab|80788052||t20536.3804773453s|s8123b|8123|rds|local|vector|||0.02||
+tab_qloss_bind|stem|bbc27ee0e4f3ecea|869caa09e9716870|cb21f8cc4257cfdc|391933568||t20536.3804776776s|s501b|501|rds|local|vector|||0.02||
+out_gloss_pn_sub_short|stem|fa6fa66490a16a0b|64bd7982fe62ea78|028c937243caa8e4|-197848016||t20536.380477954s|s878b|878|rds|local|vector|||0.02||
+out_gloss_bind|stem|bbc27ee0e4f3ecea|bf65ce2edabfe23c|7fe147f695c83f6a|-1545727082||t20536.3804781106s|s501b|501|rds|local|vector|||0||
+file_norm|stem|fa0295c18bf68959|a429e633e9fb2ada|2c530c1562a7fbd1|164554510|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/data/processed/pn_mapped.csv|t20537.5477179907s|s67225b|67225|file|local|vector|||0.77||
+data_norm|stem|37e7dfdb0ff4b8e7|a576c7650ed6fc4e|69df881238ff86ed|528001548||t20537.5484646037s|s6535b|6535|rds|local|vector|||0.14||
+file_qol|stem|713ad9b0f73d8120|faea2eca24964a31|2c530c1562a7fbd1|771708187|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/data/generated/data_generated_11667.csv|t20537.5834283531s|s1398348b|1398348|file|local|vector|||0.78||
+data_raw|stem|8fa438394ad92c82|9fb19b209c730f13|a0f54f1dd6759e9d|-644868125||t20537.5835584039s|s107649b|107649|rds|local|vector|||0.14||
+data_tte|stem|39d9d32ec71a701d|152104bc9428ff37|a3ac6c01b84cde27|-1550666243||t20537.5835612828s|s33540b|33540|rds|local|vector|||0.22|There were 74 warnings in `summarise()`. The first warning was: ℹ In argument: `T_last = max(ti[!End])`. ℹ In group 10: `SID = 'DroCAN'` `PID = 'DroCAN_107'`. Caused by warning in `max()`: ! no non-missing arguments to max; returning -Inf ℹ Run `dplyr::last_dplyr_warnings()` to see the 73 remaining warnings.|
+data_qol|stem|6315e8f07bbd8a1d|2f87b54211f448f3|aacced99429e6df5|909460246||t20537.5835620339s|s92746b|92746|rds|local|vector|||0.04||
+data_raw_pn|stem|5c47dcfb7225b84e|746e658d2a3842a8|7788ab82bd2afb47|1278032710||t20537.583562399s|s190490b|190490|rds|local|vector|||0||
+pars_tte|stem|706c957fcbe9d615|093af510f531ef4c|a2def5220aee582d|-250904775||t20537.5837368608s|s43897b|43897|rds|local|vector|||15.06|Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess|
+pars_qol|stem|13dfc8ca29947e4a|9e2f6e4d4f3c222f|39ea10d9e796b5f5|741732625||t20537.5852329621s|s760838b|760838|rds|local|vector|||129.21||
+data_qol_pn|stem|8b837591c1687dba|93c46366c7298605|7921564bb2736fdb|-397430681||t20537.5852336676s|s79942b|79942|rds|local|vector|||0.04||
+data_tte_pn|stem|f7b633872adbff32|0f1f305bf426e702|a5c613dc0e2939c0|-1560562043||t20537.5852364234s|s32041b|32041|rds|local|vector|||0.22|There were 135 warnings in `summarise()`. The first warning was: ℹ In argument: `T_last = max(ti[!End])`. ℹ In group 10: `SID = 'DroCAN'` `PID = 'DroCAN_107'`. Caused by warning in `max()`: ! no non-missing arguments to max; returning -Inf ℹ Run `dplyr::last_dplyr_warnings()` to see the 134 remaining warnings.|
+gs_tte|stem|b1ad8c9f437cd7ea|844e847c06dfc343|b62c4148565c1df5|-2068371044||t20537.5852543287s|s6068389b|6068389|rds|local|vector|||0.95|Removed 23 rows containing missing values or values outside the scale range (`geom_line()`).. Removed 1 row containing missing values or values outside the scale range (`geom_point()`).. Removed 1 row containing missing values or values outside the scale range (`geom_point()`).|
+file_posterior_tte|stem|eb55002a5483acb8|bf40ad341038b44d|41db7f858c294f26|-340102792|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/posteriors/post_ph_tte.csv|t20537.5852571317s|s119871b|119871|file|local|vector|||0.22||
+file_pars_qol|stem|7d9751045d8b6a21|4f7c9d3ec698038c|441b5f0212a1ca1a|-59541702|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/posteriors/post_qol_full.csv|t20537.5852596464s|s608136b|608136|file|local|vector|||0.37||
+pars_tte_pn|stem|4f839f41118a568c|54b7be1bfd1156ad|983e51a0afcb2efb|1765021799||t20537.5854544953s|s43831b|43831|rds|local|vector|||16.61|Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess. Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
+file_vis_tte|stem|33b0943a8e5c457d|b855a692f69d07d3|763ef5edf757133a|-1647903454||t20537.5854715865s|s115b|115|rds|local|vector|||1.28|Removed 23 rows containing missing values or values outside the scale range (`geom_line()`).. Removed 1 row containing missing values or values outside the scale range (`geom_point()`).|
+pars_qloss|stem|62a93ecdbac63820|1638526e50f01351|d12ee21016b5e12f|739207808||t20537.5854743052s|s184179b|184179|rds|local|vector|||0.2||
+gs_tte_pn|stem|10c48aec9bd50f23|43e930416a2550cd|8fee0974fc804480|-783747796||t20537.5854937013s|s6012021b|6012021|rds|local|vector|||0.76|Removed 21 rows containing missing values or values outside the scale range (`geom_line()`).|
+file_posterior_tte_pn|stem|a7e0ae3acf13e061|b4209d2a2182b203|11ddcf8477266da1|680805999|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/posteriors/post_pn_tte.csv|t20537.5854967422s|s119671b|119671|file|local|vector|||0.23||
+sim_qloss|stem|8db9cab47e796c54|ab14040449693de2|341cb7bd628294cc|1058966145||t20537.5859313192s|s2210960b|2210960|rds|local|vector|||37.41||
+file_vis_tte_pn|stem|6c65664e21d622dd|a95f6b235b458175|dd87e3c8cd3c926f|353049873||t20537.5859494339s|s115b|115|rds|local|vector|||1.38|Removed 21 rows containing missing values or values outside the scale range (`geom_line()`).|
+tab_qloss|stem|f7d9f38000092719|0457fb68178a9d8b|70f646931fa59ffa|-937649423||t20537.5859509136s|s8134b|8134|rds|local|vector|||0.11||
 output_pars_shortfall|function|194a962e52ff78f2
 get_data_qol_shift|function|624833a17673bfc3
 calc_timing|function|9712221c7e9cb9f3
@@ -25,7 +57,7 @@ calc_hazard|function|ab2ed81d6b57e50e
 sim_pre_ql_k|function|2830d1176816ef0e
 output_vis_tte|function|8a14a94738b81953
 get_data_qol|function|fd08f6513a229db6
-get_data_pn|function|c9e49f9f0fee5532
+get_data_pn|function|d05bea029b87e7ec
 save_tabs|function|d035b159b76cafbf
 summarise_qol_bayes|function|eee8968031c8021f
 visualise_qol|function|c151116968265f3a
@@ -42,7 +74,7 @@ simplify_ql_pn_sub_tabs|function|bd611272a05b75d2
 get_norm_wt|function|d49f3b8e76a2173b
 sim_ql|function|3e7f9e61e2ea9386
 fig_ext|object|54ae343bffc11636
-format_qol|function|2549105362a72b4f
+format_qol|function|6b667cfc77d1d0bf
 vis_shortfall|function|32d5725b609b87ea
 fig_path|object|9ee58e05d78148d0
 fit_tte_slope|function|25be3a17a4792771
@@ -58,36 +90,4 @@ fit_tte|function|6f4d0fda10ce26e5
 fit_qol_bayes|function|eaec1f4fb057be1e
 simulate_shortfall|function|b9230dfd15fd51f0
 format_tte|function|3037486cc6e3e70c
-file_qol|stem|bcd69c60aa0f963e|faea2eca24964a31|2c530c1562a7fbd1|771708187|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/data/generated/data_generated_11667.csv|t20536.3759823475s|s1513714b|1513714|file|local|vector|||0.75||
-data_raw|stem|00b3a2d363728a76|9fb19b209c730f13|f5acd9c195d1f8f3|-644868125||t20536.3761052288s|s108229b|108229|rds|local|vector|||0.15||
-data_tte|stem|b60c6535a0906577|152104bc9428ff37|165ac3d25ff95165|-1550666243||t20536.3761079198s|s30900b|30900|rds|local|vector|||0.2|There were 90 warnings in `summarise()`. The first warning was: ℹ In argument: `T_last = max(ti[!End])`. ℹ In group 1: `SID = 'Drolet et al. 2010'` `PID = 1`. Caused by warning in `max()`: ! no non-missing arguments to max; returning -Inf ℹ Run `dplyr::last_dplyr_warnings()` to see the 89 remaining warnings.|
-data_qol|stem|34aad460130595db|2f87b54211f448f3|731f462c83206217|909460246||t20536.3761084929s|s108397b|108397|rds|local|vector|||0.01||
-data_raw_pn|stem|019c3c3c629b5f6f|746e658d2a3842a8|2777a93edfc283a6|1278032710||t20536.3761088747s|s191850b|191850|rds|local|vector|||0||
-pars_tte|stem|965ea615bd087330|093af510f531ef4c|7cafa02cdba8b3fa|-250904775||t20536.3762896644s|s43781b|43781|rds|local|vector|||15.61|Bulk Effective Samples Size (ESS) is too low, indicating posterior means and medians may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#bulk-ess. Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
-pars_qol|stem|5057821305c60b2c|9e2f6e4d4f3c222f|12b9272d477a9aa8|741732625||t20536.3775883042s|s761654b|761654|rds|local|vector|||112.16||
-data_tte_pn|stem|78e48fbeb704db2c|0f1f305bf426e702|07eb6784a628f480|-1560562043||t20536.3775921424s|s29420b|29420|rds|local|vector|||0.3|There were 144 warnings in `summarise()`. The first warning was: ℹ In argument: `T_last = max(ti[!End])`. ℹ In group 1: `SID = 'Drolet et al. 2010'` `PID = 1`. Caused by warning in `max()`: ! no non-missing arguments to max; returning -Inf ℹ Run `dplyr::last_dplyr_warnings()` to see the 143 remaining warnings.|
-data_norm_pooled|stem|711f05035a6e33ec|6a1c938b0fcfcefc|3967a1e3d8499e7e|137102075||t20536.3775927747s|s1363b|1363|rds|local|vector|||0.01||
-data_qol_pn|stem|34582ab869dd9787|93c46366c7298605|92a75223c95995cc|-397430681||t20536.3775932872s|s93637b|93637|rds|local|vector|||0.01||
-gs_tte|stem|af553d7b6835866e|844e847c06dfc343|38b0ee3e4eaf7e15|-2068371044||t20536.3776161838s|s6039109b|6039109|rds|local|vector|||1.45|Removed 30 rows containing missing values or values outside the scale range (`geom_line()`).. Removed 1 row containing missing values or values outside the scale range (`geom_point()`).. Removed 1 row containing missing values or values outside the scale range (`geom_point()`).|
-file_posterior_tte|stem|df3c8e7b54800c47|bf40ad341038b44d|2b9293364306b670|-340102792|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/posteriors/post_ph_tte.csv|t20536.3776190424s|s119117b|119117|file|local|vector|||0.24||
-file_pars_qol|stem|d4fbde3a15f76d43|4f7c9d3ec698038c|eba343a4a47b7430|-59541702|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/posteriors/post_qol_full.csv|t20536.3776215842s|s608443b|608443|file|local|vector|||0.39||
-pars_tte_pn|stem|f1e43ea631bde328|54b7be1bfd1156ad|1f7265a92ed919c0|1765021799||t20536.3778260311s|s43892b|43892|rds|local|vector|||17.42|Tail Effective Samples Size (ESS) is too low, indicating posterior variances and tail quantiles may be unreliable. Running the chains for more iterations may help. See https://mc-stan.org/misc/warnings.html#tail-ess|
-file_vis_tte|stem|33b0943a8e5c457d|b855a692f69d07d3|78ae03648f53e84b|-1647903454||t20536.3778440334s|s115b|115|rds|local|vector|||1.33|Removed 30 rows containing missing values or values outside the scale range (`geom_line()`).. Removed 1 row containing missing values or values outside the scale range (`geom_point()`).|
-pars_qloss|stem|a3980180714c32c1|1638526e50f01351|e6b20cb8f340a169|739207808||t20536.3778466436s|s183399b|183399|rds|local|vector|||0.2||
-gs_tte_pn|stem|99e3205d5c456564|43e930416a2550cd|9f238150c2a3ec42|-783747796||t20536.3778627503s|s6000459b|6000459|rds|local|vector|||0.88|Removed 25 rows containing missing values or values outside the scale range (`geom_line()`).|
-file_posterior_tte_pn|stem|ee7711693f9c9530|b4209d2a2182b203|a441e069837165f6|680805999|E:/Projects/HPRU/Shingrix/HPRU_HZQLoss/posteriors/post_pn_tte.csv|t20536.3778656068s|s119485b|119485|file|local|vector|||0.23||
-sim_qloss|stem|2d2544dd99c4eca4|ab14040449693de2|2bd8fc19080ec02c|1058966145||t20536.3782862637s|s2215315b|2215315|rds|local|vector|||36.22||
-file_vis_tte_pn|stem|6c65664e21d622dd|a95f6b235b458175|9012e26e15fbe7a0|353049873||t20536.3783022259s|s115b|115|rds|local|vector|||1.09|Removed 25 rows containing missing values or values outside the scale range (`geom_line()`).|
-pars_qloss_pn|stem|3ff04320bf1607d1|f3e9dd668ef590e2|9848e982f272b275|-1811820398||t20536.3783044518s|s183440b|183440|rds|local|vector|||0.16||
-tab_qloss|stem|5090537325b77f9f|0457fb68178a9d8b|35dcc46616ed63ae|-937649423||t20536.3783062111s|s8129b|8129|rds|local|vector|||0.1||
-sim_qloss_pn|stem|2dd51fb640473e0f|6ec6522c32d4eefb|287d508c14296f04|-1713987709||t20536.3801399971s|s15707489b|15707489|rds|local|vector|||157.75||
-sim_qloss_pn_pooled|stem|6950145313e06342|6427125b0a4a523c|0eace5b03e201458|-816358819||t20536.3804657992s|s2216264b|2216264|rds|local|vector|||27.99||
-out_gloss|stem|5090537325b77f9f|797e085a2cfedee4|c81ea6dab65cd079|1440893689||t20536.380466127s|s8129b|8129|rds|local|vector|||0.02||
-tab_qloss_pn_sub|stem|301494eebe29d5db|61d977ccf6b50a8c|dcea125231d261e5|1820400430||t20536.3804739909s|s33762b|33762|rds|local|vector|||0.37||
-tab_qloss_pn|stem|bec250928c541143|d346b6e7f0698885|8b3485e746cdee64|-2126181239||t20536.3804759854s|s8123b|8123|rds|local|vector|||0.12||
-tab_qloss_pn_sub_short|stem|fa6fa66490a16a0b|8522c46670649ace|9cd801d35e9882e8|-1839356874||t20536.380476194s|s878b|878|rds|local|vector|||0.01||
-out_gloss_pn_sub|stem|301494eebe29d5db|31a5efb31734e0ca|2a4ba6c619d7509f|-1198880009||t20536.3804770686s|s33762b|33762|rds|local|vector|||0.07||
-out_gloss_pn|stem|bec250928c541143|4418f76283353c41|676121be8d90e3ab|80788052||t20536.3804773453s|s8123b|8123|rds|local|vector|||0.02||
-tab_qloss_bind|stem|bbc27ee0e4f3ecea|869caa09e9716870|cb21f8cc4257cfdc|391933568||t20536.3804776776s|s501b|501|rds|local|vector|||0.02||
-out_gloss_pn_sub_short|stem|fa6fa66490a16a0b|64bd7982fe62ea78|028c937243caa8e4|-197848016||t20536.380477954s|s878b|878|rds|local|vector|||0.02||
-out_gloss_bind|stem|bbc27ee0e4f3ecea|bf65ce2edabfe23c|7fe147f695c83f6a|-1545727082||t20536.3804781106s|s501b|501|rds|local|vector|||0||
+out_gloss|stem|f7d9f38000092719|797e085a2cfedee4|56575510e42fe579|1440893689||t20537.5984947556s|s8134b|8134|rds|local|vector|||0.07||

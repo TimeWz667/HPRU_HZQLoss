@@ -172,7 +172,7 @@ get_data_pn <- function(data_raw, data_pn) {
   
   dat_qol_pn <- data_raw %>% 
     filter(!is.na(Age)) %>% 
-    left_join(data_pn %>% select(SID = study, Age, norm_leoss), by = c("SID", "Age")) %>% 
+    left_join(data_pn %>% select(SID, Age, norm_leoss), by = c("SID", "Age")) %>% 
     rename(EQ5D1 = EQ5D) %>% 
     mutate(
       EQ5D = pmin(norm_leoss, EQ5D1) + (1 - norm_leoss),

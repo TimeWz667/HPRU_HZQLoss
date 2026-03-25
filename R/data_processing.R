@@ -118,6 +118,7 @@ format_qol <- function(df) {
   dat <- df %>% 
     arrange(PID, ti) %>% 
     group_by(PID) %>% 
+    filter(!all(EQ5D == 1)) %>% 
     mutate(
       loss = 1 - EQ5D,
       End = cumsum(loss) == sum(loss) & loss == loss[n()],
