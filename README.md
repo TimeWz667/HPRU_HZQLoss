@@ -13,6 +13,15 @@ The repo performed a quantitative synthesis and statistical analysis for the HRQ
 -   **2\_**: model fitting
 -   **posteriors**: simulated posterior parameters
 
+
+#### Model
+
+The time-varying HRQoL is specified with a model composed of 
+
+- Disutility period: the time from rash onset to recovery
+- Quality of life: the dynamics of HRQoL before recovery
+
+
 ### Simulation
 
 -   **3_1_calculate_goodness_of_fit.R**: calculating and visualising the goodness of fit
@@ -23,22 +32,22 @@ The repo performed a quantitative synthesis and statistical analysis for the HRQ
 
 Fig a shows the distribution of HRQOl of HZ patients by time
 
-We fristly test the assumptions for the proportional hypothesis. However, in this stage, we havn't estimates the event time for each data points. We used the data whose endpoints met and the proximate the event time by taking the mid point between the last noo-healthy measurement and the first healthy measurement for each patients.
+We firstly test the assumptions for the proportional hypothesis. However, in this stage, we havn't estimates the event time for each data points. We used the data whose endpoints met and the proximate the event time by taking the mid point between the last noo-healthy measurement and the first healthy measurement for each patients.
 
 Subjects were grouped into 10 age groups. We plotted the survival curve accordingly, finding the survival curves by age groups are not crossover to each other
 
-With the proportional hazard hypothesis, we derived the respective likelihood functions with the time-to event distributions of WeiBull, expoenential, log-normal distributions. The prior distributions of the hyperparameters were set to align with the range of recovery time from the literatures of xx and xx days after rash onset. The posterior model were performed on systematicallu sampled 25% training samples, ensureing the samples from each study were evenly selected.
+With the proportional hazard hypothesis, we derived the respective likelihood functions with the time-to event distributions of Weibull, exponential, log-normal distributions. The prior distributions of the hyper-parameters were set to align with the range of recovery time from the literatures of xx and xx days after rash onset. The posterior model were performed on systematicallu sampled 25% training samples, ensureing the samples from each study were evenly selected.
 
 In summary, we observed.
 
-1.  The age pattern of the time-to recovery can be captured through the proportional harzard model.
-2.  The x distribution performed the best in terms the mean squrared errors but after considering thecompelexity and the overall goodness of fit, we decided to apply the model with eponential distributions on the time-to recovery data
+1.  The age pattern of the time-to recovery can be captured through the proportional hazard model.
+2.  The x distribution performed the best in terms the mean squared errors but after considering the complexity and the overall goodness of fit, we decided to apply the model with exponential distributions on the time-to recovery data
 
 ## Quality of life after HZ rash onset
 
-The temproal patterns were built on the (1) the proportional each states, (2) the values ofe HRQoL, and (3) both. For reducing the computation burden and there is clear boundary between clusters, Kmeans clustering were performed and data were labelled before exploring the age-time patterns.
+The temporal patterns were built on the (1) the proportional each states, (2) the values of HRQoL, and (3) both. For reducing the computation burden and there is clear boundary between clusters, K-means clustering were performed and data were labelled before exploring the age-time patterns.
 
-From clinical perspectives, HZ were group by PHN and non-PHN according to a cut-off of 90 days after rash onset. PHN and can also be diagnosed if a patient surffering from extremely pain.
+From clinical perspectives, HZ were group by PHN and non-PHN according to a cut-off of 90 days after rash onset. PHN and can also be diagnosed if a patient suffering from extremely pain.
 
 However, in our analysis were found that there is no specific level shift before and after 90 days. Instead, were not present differently according to fe
 
@@ -48,8 +57,8 @@ In the future it will be worth to do and study witch repeat measurement of HRQoL
 
 Population norm is defined as the baseline health status of a population. Because not all people in
 
-However, the population norm estimates were usually overestimates since the institutionalised population and those who cannot repond the health survey questionaire were excluded.
+However, the population norm estimates were usually overestimates since the institutionalised population and those who cannot respond the health survey questionaire were excluded.
 
-The studies with the baseline health status surveyed were baseline the methods "then test". A retrospective survey of their health status after disease onset. The methods can detect the existance of response shift but is not able to specify the source of response shift.
+The studies with the baseline health status surveyed were baseline the methods "then test". A retrospective survey of their health status after disease onset. The methods can detect the existence of response shift but is not able to specify the source of response shift.
 
 ## [License](LICENSE)

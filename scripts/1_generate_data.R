@@ -49,20 +49,20 @@ stats_qol_bg0 <- read_csv(here::here("data", "inputs_r1_post", "stats_qol_b_bg_o
 ## Simulation
 
 seeds <- c(
-  s1 = 1828, 
-  s2 = 78197, 
-  s3 = 764, 
-  s4 = 83877, 
-  s5 = 3045,
-  s6 = 11667
+  1828, 78197, 764, 83877, 3045, 
+  11667, 83389, 32158, 59479, 3837, 
+  23130, 22440, 73821, 6428, 51303,
+  65616, 61868, 13726, 18309, 7282, 
+  15869, 11267, 46008, 76079, 52705
 )
+
+names(seeds) <- paste0("s", 1:length(seeds))
 
 
 for (v in names(seeds)) {
   set.seed(seeds[v])
   print(seeds[v])
-  
-  
+
   
   data_gen <- lapply(studies, \(sid) {
     ## Parameters
