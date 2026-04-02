@@ -78,7 +78,7 @@ for (sid in c("RamKOR", "RamMEX", "RamTWN", "RamTHA", "ScottUK")) {
 sid <- "all"
 collector <- list()
 
-for (v in c("s1", "s2", "s3", "s4",  "s5")) {
+for (v in paste0("s", 1:25)) {
   cat(sid, v, "\n")
   d0 <- get_data_qol(here::here("data", "generated", "data_generated_" + glue::as_glue(v) + ".csv"))
   
@@ -113,6 +113,7 @@ write_csv(res, here::here("docs", "test", "sim_qloss_" + glue::as_glue(sid) + ".
 
 
 
+
 sims0 <- boot_pars_bayes(here::here("posteriors", "post_ph_tte.csv"), 
                          here::here("posteriors", "post_qol_b_orig.csv"), n_sim = n_mc) %>% 
   simulate_ql(age0 = 50, age1 = 95, age_until = 5, dt = 0.01) %>% 
@@ -121,6 +122,8 @@ sims0 <- boot_pars_bayes(here::here("posteriors", "post_ph_tte.csv"),
     L = quantile(QL35, 0.025),
     U = quantile(QL35, 0.975), .by = Age
   )
+
+
 
 
 
@@ -198,5 +201,38 @@ d0 %>%
   geom_smooth(aes(x = Age, y = disuti, colour = SID), method = "lm") +
   geom_point(data = d0 %>% select(Age, rate, SID) %>% distinct(), aes(x = Age, y = 1 / rate), alpha = 0.2) +
   facet_wrap(.~SID)
+
+
+
+
+res <- read_csv(here::here("docs", "test", "sim_qloss_all.csv"))
+
+sims00 <- read_csv(here::here("data", "inputs_r1_post", "summary_qloss_ph_orig.csv")) %>% 
+  select(Age, M = QL35_M, L = QL35_L, U = QL35_U) %>% 
+  filter(Age <= 95)
+
+
+res_sum <- res %>% 
+  group_by(Age) %>% 
+  summarise(across(c(L, M, U), mean))
+
+res %>% 
+  ggplot() +
+  geom_ribbon(data = sims00, aes(x = Age, ymin = L, ymax = U), linewidth = 1.5, alpha = 0.3) +
+  geom_line(data = sims00, aes(x = Age, y = M), linewidth = 1.5) +
+  geom_line(aes(x = Age, y = L, colour = "L", group = Var), linetype = 2) +
+  geom_line(aes(x = Age, y = M, colour = "M", group = Var), linetype = 1) +
+  geom_line(aes(x = Age, y = U, colour = "U", group = Var), linetype = 2) +
+  geom_ribbon(data = res_sum, aes(x = Age, ymin = L, ymax = U), fill = "green", linewidth = 1.5, alpha = 0.3) +
+  geom_line(data = res_sum, aes(x = Age, y = M), colour = "green", linewidth = 1.5)
+  
+  
+
+
+
+res_sum <- res %>% 
+  group_by(Age) %>% 
+  summarise(across(c(L, M, U), mean))
+
 
 
