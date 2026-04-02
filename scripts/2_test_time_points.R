@@ -221,47 +221,52 @@ summary_freq <- read_csv(here::here("docs", "test", "sims_t_freq.csv"))
 summary_pure <- read_csv(here::here("docs", "test", "sims_t_pure.csv"))
 
 
-sims0 <- read_csv(here::here("data", "inputs_r1_post", "summary_qloss_ph_orig.csv"))
+sims0 <- read_csv(here::here("data", "inputs_r1_post", "summary_qloss_ph_orig.csv")) %>% 
+  filter(Age <= 95)
 
 
 
-summary_orig %>% 
-  ggplot() +
-  geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
-  geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
-  geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
-  geom_line(data = sims0, aes(x = Age, y = dur_M)) +
-  scale_y_continuous("Disutility period, year") +
-  expand_limits(y = 0)
+
+g <- ggpubr::ggarrange(
+  summary_orig %>% 
+    ggplot() +
+    geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
+    geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
+    geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
+    geom_line(data = sims0, aes(x = Age, y = dur_M)) +
+    scale_y_continuous("Disutility period, year") +
+    expand_limits(y = c(0, 1)) + 
+    labs(subtitle = "Original time-point distribution"),
+  summary_freq %>% 
+    ggplot() +
+    geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
+    geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
+    geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
+    geom_line(data = sims0, aes(x = Age, y = dur_M)) +
+    scale_y_continuous("Disutility period, year") +
+    expand_limits(y = c(0, 1)) + 
+    labs(subtitle = "Visits every five days"),
+  summary_nomiss %>% 
+    ggplot() +
+    geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
+    geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
+    geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
+    geom_line(data = sims0, aes(x = Age, y = dur_M)) +
+    scale_y_continuous("Disutility period, year") +
+    expand_limits(y = c(0, 1)) + 
+    labs(subtitle = "Original time-point distribution, no missing"),
+  summary_pure %>% 
+    ggplot() +
+    geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
+    geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
+    geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
+    geom_line(data = sims0, aes(x = Age, y = dur_M)) +
+    scale_y_continuous("Disutility period, year") +
+    expand_limits(y = c(0, 1)) + 
+    labs(subtitle = "Fully observable disutility period")
+)
 
 
-summary_freq %>% 
-  ggplot() +
-  geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
-  geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
-  geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
-  geom_line(data = sims0, aes(x = Age, y = dur_M)) +
-  scale_y_continuous("Disutility period, year") +
-  expand_limits(y = 0)
-
-
-summary_nomiss %>% 
-  ggplot() +
-  geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
-  geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
-  geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
-  geom_line(data = sims0, aes(x = Age, y = dur_M)) +
-  scale_y_continuous("Disutility period, year") +
-  expand_limits(y = 0)
-
-
-summary_pure %>% 
-  ggplot() +
-  geom_ribbon(aes(x = Age, ymin = durr_L, ymax = durr_U, group = Var), alpha = 0.03, fill = 2) +
-  geom_line(aes(x = Age, y = durr_M, group = Var), colour = 2) +
-  geom_ribbon(data = sims0, aes(x = Age, ymin = dur_L, ymax = dur_U), alpha = 0.3) +
-  geom_line(data = sims0, aes(x = Age, y = dur_M)) +
-  scale_y_continuous("Disutility period, year") +
-  expand_limits(y = 0)
+ggsave(g, filename = here::here("docs", "test", "test_timepoints.pdf"), width = 12, heigh = 10)
 
 
