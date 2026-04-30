@@ -100,29 +100,44 @@ for(v in paste0("s", 1:30)) {
 }
 
 
-vs <- dir(root_src)
-vs <- vs[startsWith(vs, "post_tte")]
-vs <- gsub("post_tte_", "", vs)
-vs <- gsub(".csv", "", vs)
+
+## Simulate QALY loss
+
+for(gp in c("ind", "2gp")) {
+  gp <- glue::as_glue(gp)
+  
+  root_src <- here::here("out", "gen_" + gp)
+  vs <- dir(root_src)
+  vs <- vs[startsWith(vs, "post_tte")]
+  vs <- gsub("post_tte_", "", vs)
+  vs <- gsub(".csv", "", vs)
+  
+  
+  res <- bind_rows(lapply(vs, \(v) {
+    sims <- boot_pars_bayes(here::here(root_src, "post_tte_" + glue::as_glue(v) + ".csv"), 
+                            here::here(root_src, "post_qol_" + glue::as_glue(v) + ".csv"), n_sim = n_mc) %>% 
+      simulate_ql(age0 = 50, age1 = 95, age_until = 5, dt = 0.01) %>% 
+      summarise(across(starts_with("QL"), list(
+        M = \(x) median(x),
+        L = \(x) quantile(x, 0.025),
+        U = \(x) quantile(x, 0.975)
+      )), .by = Age) %>% 
+      mutate(Var = v)
+    
+    sims
+  }))
+  
+  write_csv(res, here::here("docs", "full", "sim_qloss_" + gp + ".csv"))
+
+  
+}
 
 
-res <- bind_rows(lapply(vs, \(v) {
-  sims <- boot_pars_bayes(here::here(root_src, "post_tte_" + glue::as_glue(v) + ".csv"), 
-                          here::here(root_src, "post_qol_" + glue::as_glue(v) + ".csv"), n_sim = n_mc) %>% 
-    simulate_ql(age0 = 50, age1 = 95, age_until = 5, dt = 0.01) %>% 
-    summarise(across(starts_with("QL"), list(
-      M = \(x) median(x),
-      L = \(x) quantile(x, 0.025),
-      U = \(x) quantile(x, 0.975)
-    )), .by = Age) %>% 
-    mutate(Var = v)
 
-  sims
-}))
-
-write_csv(res, here::here("docs", "full", "sim_qloss_2gp.csv"))
-
-res %>% 
+g_ql <- res %>% 
   ggplot(aes(x = Age)) + 
   geom_ribbon(aes(ymin = QL35_L, ymax = QL35_U, group = Var), alpha = 0.2) +
   geom_line(aes(y = QL35_M, group = Var))
+
+
+

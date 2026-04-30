@@ -33,6 +33,8 @@ tab
   extract(SID, "SID", "stats_tte_sub_(\\w+).csv")
 
 
+src_tte_gsk <- read_csv(here::here("data", "inputs_gsk_post", "Summary_tte.csv"))
+
 pars_tte_gsk <- src_tte_gsk %>% 
   filter(Var %in% c("r0", "ba1")) %>% 
   filter(SID %in% c("DEU", "ESP", "JPN", "ITA"))
