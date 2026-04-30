@@ -103,7 +103,8 @@ for (v in names(seeds)) {
   
   data_gen <- gen_patients(prof_a, pars_qol, pars_tte, pars_tte_slopes) %>% 
     mutate(
-      SID = factor(SID, list_studies$SID)
+      SID = factor(SID, list_studies$SID),
+      Agp = cut(Age, c(18, seq(30, 100, by = 10), right = F))
     ) %>% 
     arrange(SID, PID, visit)
   
@@ -130,7 +131,8 @@ for (v in names(seeds)) {
   
   data_gen <- gen_patients(prof_a, pars_qol, pars_tte, pars_tte_slopes) %>% 
     mutate(
-      SID = factor(SID, list_studies$SID)
+      SID = factor(SID, list_studies$SID),
+      Agp = cut(Age, c(18, seq(30, 100, by = 10), right = F))
     ) %>% 
     arrange(SID, PID, visit)
   
