@@ -18,7 +18,7 @@ n_mc <- 1000
 root_src <- here::here("out", "gen_ind")
 
 
-for(v in paste0("s", 1:30)) {
+for(v in paste0("s", 31:100)) {
   cat(v, "\n")
   d0 <- get_data_qol(here::here(root_src, "generated_" + glue::as_glue(v) + ".csv"))
   
@@ -42,41 +42,10 @@ for(v in paste0("s", 1:30)) {
 }
 
 
-
-
-res <- bind_rows(lapply(paste0("s", 1:100), \(v) {
-  sims <- boot_pars_bayes(here::here(root_src, "post_tte_" + glue::as_glue(v) + ".csv"), 
-                          here::here(root_src, "post_qol_" + glue::as_glue(v) + ".csv"), n_sim = n_mc) %>% 
-    simulate_ql(age0 = 50, age1 = 95, age_until = 5, dt = 0.01) %>% 
-    summarise(across(starts_with("QL"), list(
-      M = \(x) median(x),
-      L = \(x) quantile(x, 0.025),
-      U = \(x) quantile(x, 0.975)
-    )), .by = Age) %>% 
-    mutate(Var = v)
-  
-  sims
-}))
-
-
-write_csv(res, here::here("docs", "full", "sim_qloss_ind.csv"))
-
-
-res %>% 
-  ggplot(aes(x = Age)) + 
-  geom_ribbon(aes(ymin = L, ymax = U, group = Var)) +
-  geom_line(aes(y = M, group = Var))
-
-
-
-sum_qol <- read_csv(here::here("data", "inputs_gsk_post", "Summary_qols.csv"))
-sum_qol %>% distinct() %>% filter(SID == "FULL")
-
-
 ## Scenario: individual tte
 root_src <- here::here("out", "gen_2gp")
 
-for(v in paste0("s", 1:30)) {
+for(v in paste0("s", 31:100)) {
   cat(v, "\n")
   d0 <- get_data_qol(here::here(root_src, "generated_" + glue::as_glue(v) + ".csv"))
   
