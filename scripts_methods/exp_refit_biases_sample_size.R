@@ -62,10 +62,9 @@ results <- lapply(1:nrow(pss), \(k) {
 write_csv(results, here::here("docs", "experiments", "res_sample_size.csv"))
 
 
-
 results
 
-results %>% 
+g <- results %>% 
   ggplot() + 
   geom_pointrange(aes(x = N_Sample - true_value, y = mean - true_value, ymin = `25%` - true_value, ymax = `75%` - true_value), position = position_dodge2(30)) +
   geom_hline(yintercept = 0) + 
@@ -73,7 +72,7 @@ results %>%
   facet_wrap(parameter~Scenario, scale = "free_y")
 
 
-
+g
 
 
 

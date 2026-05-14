@@ -56,14 +56,18 @@ results <- lapply(1:nrow(pss), \(k) {
 }) %>% bind_rows()
 
 
-results %>% 
+g <- results %>% 
   ggplot() + 
-  geom_pointrange(aes(x = Scenario, y = mean, ymin = `25%`, ymax = `75%`, colour = Batch), position = position_dodge2(0.3)) +
+  geom_pointrange(aes(x = Scenario, y = mean, ymin = `25%`, ymax = `75%`, colour = as.character(Batch)), position = position_dodge2(0.3)) +
   geom_linerange(aes(xmin = Scenario - 0.3, xmax = Scenario + 0.3, y = true_value)) +
-  scale_y_continuous("Errors") +
+  scale_y_continuous("value") +
+  scale_x_continuous(breaks = 1:9) + 
+  guides(colour = guide_none()) +
   facet_wrap(parameter~., scale = "free_y")
 
+g
 
+ggsave(g, filename = here::here("docs", "experiments", "g_pars_space.png"), width = 8, height = 5)
 
 
 write_csv(results, here::here("docs", "experiments", "res_pars_space.csv"))

@@ -88,20 +88,24 @@ sims <- bind_rows(
   )
 
 
-sims %>% 
+g <- sims %>% 
+  filter(Case != "Full") %>% 
   ggplot() + 
   geom_ribbon(aes(x = Age, ymin = L, ymax = U, fill = Case), alpha = 0.2) +
   geom_line(aes(x = Age, y = M, colour = Case)) +
-  facet_grid(.~Case) + 
+  # facet_grid(.~Case) + 
   scale_y_continuous("Disutility period, months", labels = scales::number_format(scale = 12)) +
   expand_limits(y = 0)
 
 
-  
+g  
+
+
+ggsave(g, filename = here::here("docs", "experiments", "g_proj_tte.png"), width = 10, height = 7) 
+
+
 
 root_src <- here::here("out", "gen_2gp")
-
-
 post <- read_csv(here::here(root_src, "post_tte_exp_s1.csv"))
 
 
@@ -123,14 +127,23 @@ sims_gen <- bind_rows(
     .by = c("Age", "Ver")
   )
 
-sims_gen %>% 
+g <- sims_gen %>% 
   ggplot() + 
-  geom_ribbon(data = sims %>% filter(Case == "Full"), aes(x = Age, ymin = L, ymax = U), alpha = 0.2) +
-  geom_line(data = sims %>% filter(Case == "Full"), aes(x = Age, y = M)) +
+  #geom_ribbon(data = sims %>% filter(Case != "Full"), aes(x = Age, ymin = L, ymax = U, group = Case), alpha = 0.1, linetype = 2) +
+  geom_line(data = sims %>% filter(Case != "Full"), aes(x = Age, y = M, group = Case), linetype = 2, linewidth = 2) +
+  geom_line(data = sims %>% filter(Case != "Full"), aes(x = Age, y = L, group = Case), linetype = 3, linewidth = 1.5) +
+  geom_line(data = sims %>% filter(Case != "Full"), aes(x = Age, y = U, group = Case), linetype = 3, linewidth = 1.5) +
   geom_ribbon(aes(x = Age, ymin = L, ymax = U, fill = Ver), alpha = 0.2) +
   geom_line(aes(x = Age, y = M, colour = Ver)) +
   
   scale_y_continuous("Disutility period, months", labels = scales::number_format(scale = 12)) +
   expand_limits(y = 0)
+
+
+g  
+
+
+ggsave(g, filename = here::here("docs", "experiments", "g_proj_gen.png"), width = 10, height = 7) 
+
 
 

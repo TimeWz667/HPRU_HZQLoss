@@ -18,7 +18,7 @@ ds <- ds[startsWith(ds, "stats_tte_sub")]
 ds
 
 pars_tte_r1 <- bind_rows(lapply(ds, \(f) {
-  if (f == "RamCRI") {
+  if (f != "RamCRI") {
     tab <- read_csv(here::here("data", "inputs_r1_post", f)) %>% 
       filter(Var %in% c("r0", "ba1")) %>% 
       mutate(SID = f)
@@ -30,7 +30,7 @@ pars_tte_r1 <- bind_rows(lapply(ds, \(f) {
   
 tab
 })) %>% 
-  extract(SID, "SID", "stats_tte_sub_(\\w+).csv")
+  tidyr::extract(SID, "SID", "stats_tte_sub_(\\w+).csv")
 
 
 src_tte_gsk <- read_csv(here::here("data", "inputs_gsk_post", "Summary_tte.csv"))
