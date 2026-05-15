@@ -67,26 +67,26 @@ list_studies <- read_csv(here::here("data", "list_studies.csv")) %>%
 list_studies
 
 
-root_src <- here::here("data", "inputs_for_gen")
-
-
-
 ## Time steps 
 time_steps <- (seq(0, by = 14, length.out = 20) + 1) / 365.25
-
+time_steps <- c(seq(7, 28, 7), 60, 90, 180, 270)
 
 ## load Shared inputs
 
-prof_a <- read_csv(here::here(root_src, "prof_a.csv"))
 
+root_src <- here::here("data", "inputs_for_gen")
+prof_a <- read_csv(here::here(root_src, "prof_a.csv"))
 pars_qol <- read_csv(here::here(root_src, "pars_qol.csv"))
 
+
 set.seed(11667)
-seeds <- round(runif(100, 0, 1e6))
+seeds <- round(runif(20, 0, 1e6))
 
 names(seeds) <- paste0("s", 1:length(seeds))
 
-
+hash <- Sys.time() %>% digest::sha1() %>% str_sub(1, 5)
+print(hash)
+hash <- glue::as_glue(hash)
 
 ## Generate data
 for (type in c("ind", "2gp")) {
@@ -99,6 +99,7 @@ for (type in c("ind", "2gp")) {
   
   dir.create(root_tar, showWarnings = F )
   
+  write_file(hash, file = here::here(root_tar, "last_version.txt"))
   
   for (v in names(seeds)) {
     set.seed(seeds[v])
@@ -112,6 +113,6 @@ for (type in c("ind", "2gp")) {
       arrange(SID, PID, visit)
     
     
-    write_csv(data_gen, file = here::here(root_tar, "generated_" + glue::as_glue(v) + ".csv"))
+    write_csv(data_gen, file = here::here(root_tar, "generated_" + glue::as_glue(v)  + "_" + hash + ".csv"))
   }
 }

@@ -11,7 +11,7 @@ dir.create(root, showWarnings = F)
 
 
 
-## TTE sub
+## TTE sub ----
 ds <- dir(here::here("data", "inputs_r1_post"))
 ds <- ds[startsWith(ds, "stats_tte_sub")]
 
@@ -73,7 +73,7 @@ src_slopes_r1 <- read_csv(here::here("data", "inputs_r1_post", "stats_tte_slopes
   pivot_wider(names_from = Var, values_from = m)
 
 src_slopes_gsk <- read_csv(here::here("data", "inputs_gsk_post", "Summary_slopes.csv")) %>% 
-  extract(file, "SID", "Post_tte_(\\w+).csv")
+  tidyr::extract(file, "SID", "Post_tte_(\\w+).csv")
 
 
 pars_slopes <- bind_rows(
@@ -104,10 +104,7 @@ write_csv(pars_slopes, here::here(root, "pars_tte_slopes_2gp.csv"))
 
 
 
-### QOL
-
-
-
+### QOL ----
 pars_qol_r1 <- list_studies %>% 
   filter(StudyGroup == "r1") %>% 
   pull(SID) %>% 
