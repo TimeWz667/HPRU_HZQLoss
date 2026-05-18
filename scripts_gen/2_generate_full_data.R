@@ -68,8 +68,8 @@ list_studies
 
 
 ## Time steps 
-time_steps <- (seq(0, by = 14, length.out = 20) + 1) / 365.25
-time_steps <- c(seq(7, 28, 7), 60, 90, 180, 270)
+# time_steps <- (seq(0, by = 14, length.out = 20) + 1) / 365.25
+time_steps <- c(seq(7, 28, 7), 60, 90, 180, 270) / 365.25
 
 ## load Shared inputs
 
@@ -80,7 +80,7 @@ pars_qol <- read_csv(here::here(root_src, "pars_qol.csv"))
 
 
 set.seed(11667)
-seeds <- round(runif(20, 0, 1e6))
+seeds <- round(runif(5, 0, 1e6))
 
 names(seeds) <- paste0("s", 1:length(seeds))
 

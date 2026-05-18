@@ -40,8 +40,8 @@ fit_tte <- function(data_tte, n_iter, n_warmup) {
 
 
 ## Setup
-n_iter <- 1000
-n_warmup <- 900
+n_iter <- 2000
+n_warmup <- 1500
 
 check_existence <- TRUE
 
@@ -61,12 +61,17 @@ for (type in c("ind", "2gp")) {
   for (gen in gens) {
     v <- gsub("generated_", "", gen)
     v <- gsub("_" + last_version + ".csv", "", v)
-    cat(type, v, "\n")
+    
+    data_tte <- read_csv(here::here(root_src, gen)) %>% 
+      filter(visit == 1) %>% 
+      select(Age, TTE = disuti)
+    
     out_file <- here::here(root_src, "post_tte_exp_" + glue::as_glue(v) + "_" + last_version + ".csv")
     
     if (!(check_existence & file.exists(out_file))) {
+      cat(type, v, "\n")
       ext <- fit_tte(data_tte, n_iter = n_iter, n_warmup = n_warmup)
-      write_csv(ext, here::here(root_src, "post_tte_exp_" + glue::as_glue(v) + "_" + last_version + ".csv"))
+      if (!is.null(ext)) write_csv(ext, out_file)
     }
   }
 }

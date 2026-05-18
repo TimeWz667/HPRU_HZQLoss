@@ -12,6 +12,16 @@ fit_qol_bayes <- function(dat_qol, n_iter = 5e3, n_collect = 500, n_chains = 4, 
   clu <- kmeans(ds_nz$EQ5D, 2)
   
   
+  cap_sample <- function(df, n_cap = 500) {
+    if (nrow(df) >= n_cap) {
+      return (df %>% ungroup() %>%  sample_n(n_cap))
+    } else {
+      return (df)
+    }
+  }
+  
+  n_settings <- 
+  
   
   if (clu$centers[1] > clu$centers[2]) {
     ds_nz <- ds_nz %>% mutate(cluster = clu$cluster)
@@ -30,23 +40,16 @@ fit_qol_bayes <- function(dat_qol, n_iter = 5e3, n_collect = 500, n_chains = 4, 
     model_logit_d <- stan_model(here::here("models", "reff_logistic_d.stan"))
     # model_logit_ad <- stan_model(here::here("models", "reff_logistic_ad.stan"))
   }
-
-  
-  # m_c1 <- lmer(EQ5D ~ 1 + (ti | SID), data = ds_nz %>% filter(cluster == 1))
-  # ms$c2 <- lmer(EQ5D ~ 1 + (ti | SID), data = ds_c2)
-  # ms$pz <- glmer(cluster ~ 1 + (1 | SID), data = ds_zero, family = binomial)
-  # m_pc1 <-  glmer(cluster ~ 1 + (1 | SID), data = ds_nz %>% mutate(cluster = (cluster == 1) + 0), family = binomial)
-  
   
   # Q, cluster 1
   ds <- local({
     ds <- ds_nz %>% 
       filter(cluster == 1) %>%
-      # sample_n(500) %>%
+      cap_sample(n_cap = 500) %>% 
       select(Gs, Ys = EQ5D, Ts = ti) %>% as.list()
     
     ds$N <- length(ds$Ys)
-    ds$N_gp <- length(unique(ds$Gs))
+    ds$N_gp <- max(dat_qol$Gs)
     ds
   })
   
@@ -57,12 +60,12 @@ fit_qol_bayes <- function(dat_qol, n_iter = 5e3, n_collect = 500, n_chains = 4, 
   # Q, cluster 2
   ds <- local({
     ds <- ds_nz %>% 
-      filter(cluster == 2) %>%
-      # sample_n(500) %>%
+      filter(cluster == 2) %>% 
+      cap_sample(n_cap = 500) %>%  
       select(Gs, Ys = EQ5D, Ts = ti) %>% as.list()
     
     ds$N <- length(ds$Ys)
-    ds$N_gp <- length(unique(ds$Gs))
+    ds$N_gp <- max(dat_qol$Gs)
     ds
   })
   post_c2 <- sampling(model_norm_tg, data = ds[c("Ys", "N", "Gs", "N_gp", "Ts")], 
@@ -71,18 +74,12 @@ fit_qol_bayes <- function(dat_qol, n_iter = 5e3, n_collect = 500, n_chains = 4, 
   
   # P(zero)
   ds <- local({
-    if (nrow(dat_qol) >= 500) {
-      ds <- dat_qol %>% mutate(cluster = (EQ5D >= 1) + 0) %>%
-        sample_n(500)
-    } else {
-      ds <- dat_qol %>% mutate(cluster = (EQ5D >= 1) + 0)
-    }
-    
-    ds <- ds %>%
+    ds <- dat_qol %>% mutate(cluster = (EQ5D >= 1) + 0) %>% 
+      cap_sample(n_cap = 500) %>%
       select(Gs, Ys = cluster, Ts = ti, As = Age) %>% as.list()
     
     ds$N <- length(ds$Ys)
-    ds$N_gp <- length(unique(ds$Gs))
+    ds$N_gp <- max(dat_qol$Gs)
     ds
   })
   post_pz <- sampling(model_logit_d, data = ds[c("Ys", "N", "Gs", "N_gp", "Ts")], 
@@ -93,11 +90,11 @@ fit_qol_bayes <- function(dat_qol, n_iter = 5e3, n_collect = 500, n_chains = 4, 
   # P(c1|~zero)
   ds <- local({
     ds <- ds_nz %>% mutate(cluster = (cluster == 1) + 0) %>%
-      # sample_n(500) %>%
+      cap_sample(n_cap = 500) %>%
       select(Gs, Ys = cluster, Ts = ti, As = Age) %>% as.list()
     
     ds$N <- length(ds$Ys)
-    ds$N_gp <- length(unique(ds$Gs))
+    ds$N_gp <- max(dat_qol$Gs)
     ds
   })
   post_pc1 <- sampling(model_logit_d, data = ds[c("Ys", "N", "Gs", "N_gp", "Ts")],

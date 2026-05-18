@@ -10,18 +10,17 @@ options(mc.cores = 8)
 rstan_options(auto_write = TRUE)
 
 model_t2z <- rstan::stan_model(here::here("models", "time2zero_age.stan"))
-model_t2z_cen <- rstan::stan_model(here::here("models", "time2zero_age.stan"))
 
 
 
 ## Setup
-n_iter <- 2000
-n_warmup <- 1800
-n_batch <- 5
+n_iter <- 1000
+n_warmup <- 900
+n_batch <- 10
 
 pss <- tibble(r0 = c(3, 5), ba1 = c(-0.025, -0.05))
 
-ns_sample <- seq(500, 5000, 500)
+ns_sample <- seq(100, 5000, 200)
 
 
 
@@ -62,7 +61,18 @@ results <- lapply(1:nrow(pss), \(k) {
 write_csv(results, here::here("docs", "experiments", "res_sample_size.csv"))
 
 
-results
+results %>% 
+  group_by(parameter, Scenario, N_Sample) %>%
+  summarise(
+    m = mean(mean - true_value),
+    l = mean(`25%` - true_value),
+    u = mean(`75%` - true_value)
+  ) %>% 
+  ggplot() + 
+  geom_pointrange(aes(x = N_Sample, y = m, ymin = l, ymax = u), position = position_dodge2(30)) +
+  geom_hline(yintercept = 0) + 
+  scale_y_continuous("Errors") +
+  facet_wrap(parameter~Scenario, scale = "free_y")
 
 g <- results %>% 
   ggplot() + 
