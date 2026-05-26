@@ -23,14 +23,12 @@ fig_ext <- ".png"
 tab_path <- here::here("docs", "tabs")
 
 dir.create("posteriors/", showWarnings = F)
-
 dir.create("docs/", showWarnings = F)
 dir.create(fig_path, showWarnings = F)
 dir.create(tab_path, showWarnings = F)
 
 
 n_mc <- 2000
-tar_source()
 # tar_source("other_functions.R") # Source other scripts as needed.
 
 # Replace the target list below with your own:
