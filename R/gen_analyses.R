@@ -24,7 +24,6 @@ summary_proj <- function(boot_pars,
                          ages = seq(50, 90, 5),times = c(0, 14, 30, 60, 90),
                          dt = 0.01, ti_until = 5) {
   
-  
   tab_tte <- tibble(Age = ages) %>% 
     cross_join(boot_pars) %>% 
     mutate(
@@ -97,5 +96,32 @@ summary_proj <- function(boot_pars,
     tab_time = tab_qol
   ))
 }
+
+
+summarise_qls <- function(pars_qol, pars_tte, ages = seq(50, 90, 5), times = c(0, 14, 30, 60, 90), batch) {
+  summ <- pars_qol %>% 
+    select(- lp__) %>% 
+    mutate(Key = 1:n(), .by = Model) %>%  
+    pivot_longer(-c(Model, Key)) %>% 
+    filter(!is.na(value)) %>% 
+    mutate(name = paste0(Model, "_", name)) %>%
+    select(- Model) %>% 
+    pivot_wider() %>% 
+    left_join(
+      pars_tte %>% 
+        mutate(Key = 1:n()), by = "Key"
+    ) %>% summary_proj(
+      ages = ages,
+      times = times
+    )
+  
+  summ <- lapply(summ, \(x) x %>% mutate(Batch = batch))
+  
+  return(summ)
+}
+
+
+
+
 
 
