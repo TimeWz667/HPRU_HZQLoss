@@ -46,7 +46,7 @@ n_warmup <- 1500
 check_existence <- TRUE
 
 
-for (type in c("ind", "2gp")) {
+for (type in c("ind", "2gp", "ind_km", "2gp_km")) {
   type <- glue::as_glue(type)
   print(type)
 
@@ -78,7 +78,7 @@ for (type in c("ind", "2gp")) {
 
 
 ## Check all done
-for (type in c("ind", "2gp")) {
+for (type in c("ind", "2gp", "ind_km", "2gp_km")) {
   type <- glue::as_glue(type)
   root_src <- here::here("out", "gen_" + type)
   

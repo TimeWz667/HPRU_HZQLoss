@@ -36,6 +36,7 @@ results <- lapply(1:nrow(pss), \(k) {
       ) %>% 
         mutate(
           rate = pars$r0 * exp(As * pars$ba1),
+          
           Ts = rexp(n(), rate = rate)    
         )
       
@@ -65,8 +66,8 @@ results %>%
   group_by(parameter, Scenario, N_Sample) %>%
   summarise(
     m = mean(mean - true_value),
-    l = mean(`25%` - true_value),
-    u = mean(`75%` - true_value)
+    l = quantile(mean - true_value, 0.25),
+    u = quantile(mean - true_value, 0.75)
   ) %>% 
   ggplot() + 
   geom_pointrange(aes(x = N_Sample, y = m, ymin = l, ymax = u), position = position_dodge2(30)) +

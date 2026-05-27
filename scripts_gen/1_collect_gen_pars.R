@@ -133,13 +133,62 @@ pars_qol_gsk0 <- read_csv(here::here("data", "inputs_gsk_post", "Summary_qols.cs
   mutate(Var = gsub("\\[1\\]", "", Var)) %>% 
   filter(SID %in% c("DEU", "ESP", "JPN", "ITA")) %>% 
   mutate(Var = paste0(Model, "_", Var)) %>% 
-  select(SID, Model, Var, mean, sd)
+  select(SID, Model, Var, mean, sd) %>% 
+  mutate(
+    mean = case_when(
+      Var == "PZ_bg" ~ 0,
+      Var == "PC1_bg" ~ 0,
+      T ~ mean
+    ),
+    sd = case_when(
+      Var == "PZ_bg" ~ 0,
+      Var == "PC1_bg" ~ 0,
+      T ~ sd
+    )
+  )
 
 
 pars_qol <- bind_rows(pars_qol_r1, pars_qol_gsk0)
 
 
 write_csv(pars_qol, here::here(root, "pars_qol.csv"))
+
+
+pars_qol_gskk <- read_csv(here::here("data", "inputs_gsk_post", "tab_qols.csv"))
+
+
+pars_qol <- bind_rows(
+  pars_qol_r1,
+  pars_qol_gskk %>% 
+    summarise(
+      PZ = Prop[Cluster == 0],
+      PZ_bg = 0,
+      PZ_bd15 = 0,
+      PZ_bd30 = 0,
+      PZ_b0 = log(PZ / (1 - PZ)), 
+      PC1 = Prop[Cluster == 1] / (Prop[Cluster == 1] + Prop[Cluster == 2]),
+      PC1_b0 = log(PC1 / (1 - PC1)), 
+      PC1_bg = 0,
+      PC1_bd15 = 0,
+      PC1_bd30 = 0,
+      .by = "Country"
+    ) %>% 
+    pivot_longer(- Country, values_to = "mean", names_to = "Var") %>% 
+    mutate(sd = 0) %>% 
+    tidyr::extract(Var, "Model", "(\\w+)_", remove = F) %>% 
+    filter(!is.na(Model)) %>% 
+    rename(SID = Country),
+  pars_qol_gskk %>% 
+    filter(Cluster != 0) %>%
+    mutate(Model = paste0("C", Cluster), bg = 0) %>% 
+    rename(b0 = mu, sigma = std) %>% 
+    select(Model, SID = Country, b0, sigma, bg) %>% 
+    pivot_longer(- c(SID, Model), values_to = "mean", names_to = "Var") %>% 
+    mutate(sd = 0, Var = paste0(Model, "_", Var)),
+  
+)
+
+write_csv(pars_qol, here::here(root, "pars_qol_km.csv"))
 
 
 

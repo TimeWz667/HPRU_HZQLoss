@@ -77,10 +77,11 @@ time_steps <- c(seq(7, 28, 7), 60, 90, 180, 270) / 365.25
 root_src <- here::here("data", "inputs_for_gen")
 prof_a <- read_csv(here::here(root_src, "prof_a.csv"))
 pars_qol <- read_csv(here::here(root_src, "pars_qol.csv"))
+pars_qol_km <- read_csv(here::here(root_src, "pars_qol_km.csv"))
 
 
 set.seed(11667)
-seeds <- round(runif(5, 0, 1e6))
+seeds <- round(runif(10, 0, 1e6))
 
 names(seeds) <- paste0("s", 1:length(seeds))
 
@@ -106,6 +107,35 @@ for (type in c("ind", "2gp")) {
     print(seeds[v])
     
     data_gen <- gen_patients(prof_a, pars_qol, pars_tte, pars_tte_slopes) %>% 
+      mutate(
+        SID = factor(SID, list_studies$SID),
+        Agp = cut(Age, c(18, seq(30, 100, by = 10), right = F))
+      ) %>% 
+      arrange(SID, PID, visit)
+    
+    
+    write_csv(data_gen, file = here::here(root_tar, "generated_" + glue::as_glue(v)  + "_" + hash + ".csv"))
+  }
+}
+
+
+for (type in c("ind", "2gp")) {
+  type <- glue::as_glue(type)
+  print(type)
+  pars_tte <- read_csv(here::here(root_src, "pars_tte_" + type + ".csv"))
+  pars_tte_slopes <- read_csv(here::here(root_src, "pars_tte_slopes_" + type + ".csv"))
+  
+  root_tar <- here::here("out", "gen_" + type + "_km")
+  
+  dir.create(root_tar, showWarnings = F )
+  
+  write_file(hash, file = here::here(root_tar, "last_version.txt"))
+  
+  for (v in names(seeds)) {
+    set.seed(seeds[v])
+    print(seeds[v])
+    
+    data_gen <- gen_patients(prof_a, pars_qol_km, pars_tte, pars_tte_slopes) %>% 
       mutate(
         SID = factor(SID, list_studies$SID),
         Agp = cut(Age, c(18, seq(30, 100, by = 10), right = F))
