@@ -22,7 +22,7 @@ root_path <- here::here("docs", "gen")
 dir.create(root_path, showWarnings = F)
 
 fig_path <- here::here("docs", "gen", "figs")
-fig_ext <- ".png"
+fig_ext <- glue::as_glue(".png")
 dir.create(fig_path, showWarnings = F)
 
 tab_path <- here::here("docs", "gen", "tabs")
@@ -39,7 +39,7 @@ input_path <- here::here("data", "inputs_for_gen")
 
 ## Meta parameters
 n_mc <- 2000
-n_seeds <- 3
+n_seeds <- 20
 
 n_iter <- 2000
 n_warmup <- 1500
@@ -88,6 +88,8 @@ list(
   
   tar_target(tab_time, summ_qloss$tab_time, pattern = map(summ_qloss)),
   tar_target(tab_age, summ_qloss$tab_age, pattern = map(summ_qloss)),
+  
+  tar_target(gs_qloss, vis_qls(tab_age)),
 
   tar_target(file_tab_time_batch, {
     f <- here::here(tab_path, "tab_time_by_batch.csv"); write_csv(tab_time, f); f
@@ -104,6 +106,12 @@ list(
     f <- here::here(tab_path, "tab_age.csv")
     tab_age %>% summarise(across(everything(), mean), .by = Age) %>% select(-Batch) %>% write_csv(f)
     f
+  }, format = "file"),
+  tar_target(file_gs_age, {
+    for (key in names(gs_qloss)) {
+      ggsave(gs_qloss[[key]], filename = here::here(fig_path, paste0("g_", key, fig_ext)), width = 6, height = 5)
+    }
+    fig_path
   }, format = "file")
   ## extraction
 )

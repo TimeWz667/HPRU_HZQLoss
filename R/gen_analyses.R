@@ -121,6 +121,45 @@ summarise_qls <- function(pars_qol, pars_tte, ages = seq(50, 90, 5), times = c(0
 }
 
 
+vis_qls <- function(tab_age) {
+  summ <- tab_age %>% summarise(across(everything(), mean), .by = Age)
+  
+  gs <- list()
+
+  gs$g_proj_qls35 <- summ %>% 
+    ggplot(aes(x = Age)) +
+    geom_ribbon(aes(ymin = QL35_L, ymax = QL35_U), alpha = 0.2) +
+    geom_line(aes(y = QL35_M)) +
+    scale_y_continuous("QALY loss") +
+    scale_x_continuous("Age at onset of HZ rash") +
+    expand_limits(y = 0) +
+    labs(caption = "discounting: 3.5%") +
+    theme_bw()
+  
+  
+  gs$g_proj_heter_qls35 <- tab_age %>% 
+    mutate(Batch = as.character(as.numeric(as.factor(Batch)))) %>% 
+    ggplot(aes(x = Batch)) +
+    geom_pointrange(aes(y = QL35_M, ymin = QL35_L, ymax = QL35_U)) +
+    facet_wrap(.~Age, labeller = "label_both") +
+    scale_y_continuous("QALY loss") +
+    expand_limits(y = 0) +
+    labs(caption = "Age: age at onset of HZ rash; discounting: 3.5%") +
+    theme_bw()
+  
+  
+  gs$g_proj_disuti <- summ %>% 
+    ggplot(aes(x = Age)) +
+    #geom_ribbon(aes(ymin = qexp(0.25, 1 / disuti_M), ymax = qexp(0.75, 1 / disuti_M)), alpha = 0.2) +
+    geom_ribbon(aes(ymin = disuti_L, ymax = disuti_U), alpha = 0.2) +
+    geom_line(aes(y = disuti_M))  +
+    scale_y_continuous("Disutility period, month", labels = scales::number_format(scale = 12), breaks = 0:12 / 12) +
+    scale_x_continuous("Age at onset of HZ rash") +
+    expand_limits(y = 0) +
+    theme_bw()
+  
+  return(gs)
+}
 
 
 
