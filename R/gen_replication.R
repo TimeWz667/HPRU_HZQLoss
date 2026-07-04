@@ -1,5 +1,5 @@
 
-gen_patients <- function(prof_a, time_steps, pars_qol, pars_tte, pars_tte_slopes, list_studies, seed = 11667) {
+gen_patients <- function(prof_a, time_steps, pars_qol, pars_tte, list_studies, seed = 11667) {
   set.seed(seed)
   
   dat_gen <- prof_a %>% 
@@ -10,11 +10,10 @@ gen_patients <- function(prof_a, time_steps, pars_qol, pars_tte, pars_tte_slopes
       Age = floor(runif(n(), A0, A1))
     ) %>% 
     select(-c("Agp", "A0", "A1")) %>% 
-    full_join(bind_rows(pars_tte, pars_qol) %>% select(- Model), by = "SID", relationship = "many-to-many")  %>% 
+    full_join(bind_rows(pars_tte, pars_qol) %>% select(SID, Var, mean, sd), by = "SID", relationship = "many-to-many")  %>% 
     mutate(value = rnorm(n(), mean, sd)) %>% 
     select(-c(mean, sd)) %>% 
     pivot_wider(names_from = Var, values_from = value) %>% 
-    left_join(pars_tte_slopes) %>% 
     mutate(
       r0 = pmax(r0, 0.0001),
       ba1_sim = b0 + log(r0) * b_lr0 + rnorm(n(), 0, rsd),

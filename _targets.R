@@ -32,7 +32,7 @@ post_path <- here::here("posteriors", "gen")
 dir.create(post_path, showWarnings = F)
 
 
-input_path <- here::here("data", "inputs_for_gen")
+input_path <- here::here("data", "inputs_gen")
 
 
 
@@ -47,8 +47,9 @@ n_warmup <- 1500
 tar_option_set(seed = 11667)
 
 
-list_studies <- read_csv(here::here("data", "list_studies.csv")) %>% 
-  select(study, SID, SIK)
+list_studies <- read_csv(here::here("data", "list_studies.csv"))  %>% 
+  mutate(Set = ifelse(StudyGroup == "r1", "SetA", "SetB"))%>% 
+  select(study, SID, SIK, Set)
 list_studies
 
 
@@ -61,14 +62,16 @@ list(
   tar_target(file_norm, here::here("data", "processed", "pn_mapped.csv"), format = "file"),
   tar_target(data_norm, read_csv(file_norm)),
   
-  tar_target(file_pars_qol, here::here(input_path, "pars_qol_km.csv"), format = "file"),
-  tar_target(pars_qol, read_csv(file_pars_qol)),
+  tar_target(file_pars_qol, here::here(input_path, "pars_qol.csv"), format = "file"),
+  tar_target(pars_qol, read_csv(file_pars_qol) %>% filter(VSet == "UK")),
   
-  tar_target(file_pars_tte, here::here(input_path, "pars_tte_2gp.csv"), format = "file"),
-  tar_target(pars_tte, read_csv(file_pars_tte)),
+  tar_target(file_pars_tte, here::here(input_path, "pars_tte.csv"), format = "file"),
+  tar_target(pars_tte_all, list_studies %>% select(SID, Set) %>% 
+               left_join(read_csv(file_pars_tte), relationship = "many-to-many")),
   
-  tar_target(file_pars_tte_slopes, here::here(input_path, "pars_tte_slopes_2gp.csv"), format = "file"),
-  tar_target(pars_tte_slopes, read_csv(file_pars_tte_slopes)),
+  tar_target(pars_tte_ph, pars_tte_all %>% filter(Base == "PH")),
+  tar_target(pars_tte_pn, pars_tte_all %>% filter(Base == "PN")),
+
   
   tar_target(time_steps, c(seq(7, 28, 7), 60, 90, 180, 270) / 365.25),
   
@@ -77,42 +80,45 @@ list(
   
   # Generating Data
   tar_target(seed, runif(n_seeds)),
-  tar_target(data_gen, gen_patients(prof_a, time_steps, pars_qol, pars_tte, pars_tte_slopes, list_studies, seed = seed), pattern = map(seed)),
+  tar_target(data_gen_ph, gen_patients(prof_a, time_steps, pars_qol, pars_tte_ph, list_studies, seed = seed), pattern = map(seed)),
+  tar_target(data_gen_pn, gen_patients(prof_a, time_steps, pars_qol, pars_tte_pn, list_studies, seed = seed), pattern = map(seed)),
   
   # Model fitting
-  tar_target(post_qol, fit_qol(data_gen, n_iter, n_warmup, n_attempts = 10), pattern = map(data_gen)),
-  tar_target(post_tte, fit_tte_exact(data_gen, n_iter, n_warmup, n_attempts = 10), pattern = map(data_gen)),
+  # tar_target(post_qol, fit_qol(data_gen_ph, n_iter, n_warmup, n_attempts = 10), pattern = map(data_gen_ph)),
+  tar_target(post_tte, fit_tte_exact(data_gen_ph, n_iter, n_warmup, n_attempts = 10), pattern = map(data_gen_ph)),
+  tar_target(post_tte_pn, fit_tte_exact(data_gen_pn, n_iter, n_warmup, n_attempts = 10), pattern = map(data_gen_pn))
   
   # Projection
-  tar_target(summ_qloss, summarise_qls(post_qol, post_tte, batch = seed), pattern = map(post_qol, post_tte, seed)),
-  
-  tar_target(tab_time, summ_qloss$tab_time, pattern = map(summ_qloss)),
-  tar_target(tab_age, summ_qloss$tab_age, pattern = map(summ_qloss)),
-  
-  tar_target(gs_qloss, vis_qls(tab_age)),
-
-  tar_target(file_tab_time_batch, {
-    f <- here::here(tab_path, "tab_time_by_batch.csv"); write_csv(tab_time, f); f
-  }, format = "file"),
-  tar_target(file_tab_time, {
-    f <- here::here(tab_path, "tab_time.csv")
-    tab_time %>% summarise(across(everything(), mean), .by = Time) %>% select(-Batch) %>% write_csv(f)
-    f
-  }, format = "file"),
-  tar_target(file_tab_age_batch, {
-    f <- here::here(tab_path, "tab_age_by_batch.csv"); write_csv(tab_age, f); f
-  }, format = "file"),
-  tar_target(file_tab_age, {
-    f <- here::here(tab_path, "tab_age.csv")
-    tab_age %>% summarise(across(everything(), mean), .by = Age) %>% select(-Batch) %>% write_csv(f)
-    f
-  }, format = "file"),
-  tar_target(file_gs_age, {
-    for (key in names(gs_qloss)) {
-      ggsave(gs_qloss[[key]], filename = here::here(fig_path, paste0("g_", key, fig_ext)), width = 6, height = 5)
-    }
-    fig_path
-  }, format = "file")
+  # tar_target(summ_qloss, summarise_qls(post_qol, post_tte, batch = seed), pattern = map(post_qol, post_tte, seed)),
+  # tar_target(summ_qloss_pn, summarise_qls(post_qol, post_tte_pn, batch = seed), pattern = map(post_qol, post_tte_pn, seed)),
+  # 
+  # tar_target(tab_time, summ_qloss$tab_time, pattern = map(summ_qloss)),
+  # tar_target(tab_age, summ_qloss$tab_age, pattern = map(summ_qloss)),
+  # 
+  # tar_target(gs_qloss, vis_qls(tab_age)),
+  # 
+  # tar_target(file_tab_time_batch, {
+  #   f <- here::here(tab_path, "tab_time_by_batch.csv"); write_csv(tab_time, f); f
+  # }, format = "file"),
+  # tar_target(file_tab_time, {
+  #   f <- here::here(tab_path, "tab_time.csv")
+  #   tab_time %>% summarise(across(everything(), mean), .by = Time) %>% select(-Batch) %>% write_csv(f)
+  #   f
+  # }, format = "file"),
+  # tar_target(file_tab_age_batch, {
+  #   f <- here::here(tab_path, "tab_age_by_batch.csv"); write_csv(tab_age, f); f
+  # }, format = "file"),
+  # tar_target(file_tab_age, {
+  #   f <- here::here(tab_path, "tab_age.csv")
+  #   tab_age %>% summarise(across(everything(), mean), .by = Age) %>% select(-Batch) %>% write_csv(f)
+  #   f
+  # }, format = "file"),
+  # tar_target(file_gs_age, {
+  #   for (key in names(gs_qloss)) {
+  #     ggsave(gs_qloss[[key]], filename = here::here(fig_path, paste0("g_", key, fig_ext)), width = 6, height = 5)
+  #   }
+  #   fig_path
+  # }, format = "file")
   ## extraction
 )
 
