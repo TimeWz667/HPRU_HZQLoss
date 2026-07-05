@@ -39,7 +39,7 @@ input_path <- here::here("data", "inputs_gen")
 
 ## Meta parameters
 n_mc <- 2000
-n_seeds <- 5
+n_seeds <- 100
 
 n_iter <- 2000
 n_warmup <- 1500
