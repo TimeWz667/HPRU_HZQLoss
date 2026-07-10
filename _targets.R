@@ -49,7 +49,7 @@ tar_option_set(seed = 11667)
 
 list_studies <- read_csv(here::here("data", "list_studies.csv"))  %>% 
   mutate(Set = ifelse(StudyGroup == "r1", "SetA", "SetB"))%>% 
-  select(study, SID, SIK, Set)
+  select(study, Cite, Setting, SID, SIK, Set)
 list_studies
 
 
@@ -133,6 +133,7 @@ list(
     fig_path
   }, format = "file")
   ## extraction
+
 )
 
 

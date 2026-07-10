@@ -1,14 +1,14 @@
-study,SID,SIK,GeoGroup,proxy,Source,StudyGroup
-Drolet et al. 2010,DroCAN,1,Am,Canada,Poder et al.,r1
-Rampakakis et al. 2017 Argentina,RamARG,2,LatinAm,Argentina,Janssen et al.,r1
-Rampakakis et al. 2017 Costa Rica,RamCRI,3,LatinAm,Brazil,Santos et al.,r1
-Rampakakis et al. 2017 Korea,RamKOR,4,Asia,Korea,Janssen et al.,r1
-Rampakakis et al. 2017 Mexico,RamMEX,5,LatinAm,Brazil,Santos et al.,r1
-Rampakakis et al. 2017 Taiwan,RamTWN,6,Asia,Korea,Janssen et al.,r1
-Rampakakis et al. 2017 Thailand,RamTHA,7,Asia,Thailand,Janssen et al.,r1
-Scott et al. 2006,ScottUK,8,Europe,UK,McNamara et al.,r1
-van Wijck et al. 2016,VanNL,9,Europe,Netherlands ,Janssen et al.,r1
-ITA,ITA,10,Europe,Netherlands ,Janssen et al.,gsk
-JPN,JPN,11,Asia,Korea,Janssen et al.,gsk
-DEU,DEU,12,Europe,Netherlands ,Janssen et al.,gsk
-ESP,ESP,13,Europe,Netherlands ,Janssen et al.,gsk
+study,Cite,Setting,SID,SIK,GeoGroup,proxy,Source,StudyGroup
+Drolet et al. 2010,Drolet et al. 2010,Canada,DroCAN,1,Am,Canada,Poder et al.,r1
+Rampakakis et al. 2017 Argentina,Rampakakis et al. 2017,Argentina,RamARG,2,LatinAm,Argentina,Janssen et al.,r1
+Rampakakis et al. 2017 Costa Rica,Rampakakis et al. 2017,Brazil,RamCRI,3,LatinAm,Brazil,Santos et al.,r1
+Rampakakis et al. 2017 Korea,Rampakakis et al. 2017,Korea,RamKOR,4,Asia,Korea,Janssen et al.,r1
+Rampakakis et al. 2017 Mexico,Rampakakis et al. 2017,Mexico,RamMEX,5,LatinAm,Brazil,Santos et al.,r1
+Rampakakis et al. 2017 Taiwan,Rampakakis et al. 2017,Taiwan,RamTWN,6,Asia,Korea,Janssen et al.,r1
+Rampakakis et al. 2017 Thailand,Rampakakis et al. 2017,Thailand,RamTHA,7,Asia,Thailand,Janssen et al.,r1
+Scott et al. 2006,Scott et al. 2006,UK,ScottUK,8,Europe,UK,McNamara et al.,r1
+van Wijck et al. 2016,van Wijck et al. 2016,Netherlands ,VanNL,9,Europe,Netherlands ,Janssen et al.,r1
+ITA,Matthews et al. 2019,Italy,ITA,10,Europe,Netherlands ,Janssen et al.,gsk
+JPN,Mizukami et al. 2018,Japan,JPN,11,Asia,Korea,Janssen et al.,gsk
+DEU,Curran et al. 2018,Germany,DEU,12,Europe,Netherlands ,Janssen et al.,gsk
+ESP,Diez-Domingo et al. 2021,Spain,ESP,13,Europe,Netherlands ,Janssen et al.,gsk
